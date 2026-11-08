@@ -73,5 +73,5 @@ Chỉ **theme/plugin tự phát triển** được track trong Git. WordPress co
 | 3 — Hardening | Chưa bắt đầu |
 | 4 — Launch | Chưa bắt đầu |
 
-Đang chạy Wave 4: T2.3+T2.4 TOC/series · T2.5 search · T2.6 code/callouts.
+Đang chạy Wave 4: T2.3+T2.4 TOC/series · T2.6 code/callouts. T2.5 search ✅.
 Sau Wave 3: T2.3 TOC · T2.4 series nav · T2.5 search · T2.6 code/callouts.

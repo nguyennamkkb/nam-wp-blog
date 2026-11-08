@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| **Đang làm** | T2.3+T2.4 (Worker A) · T2.5 (Worker B) · T2.6 (Worker C) — Wave 4 |
+| **Đang làm** | T2.3+T2.4 (Worker A) · T2.6 (Worker C) — Wave 4 |
 | **Kế tiếp** | T2.7 author/related sau Wave 4 |
 | **Phase** | Phase 1 ✅ · Phase 2 — Wave 4 |
 | **Đã chốt** | Tên: Latent · Ngôn ngữ: tiếng Việt · Timeline: 10 ngày làm việc |
-| **Vừa xong** | T1.8 `5408792` · auto-load `75a6836` · T2.2 `8d94e1b` · T2.1 `e27e37f` |
+| **Vừa xong** | T2.5 `e990607` · T1.8 `5408792` · auto-load `75a6836` · T2.2 `8d94e1b` |
 
 ---
 
@@ -50,7 +50,7 @@
 | T2.2 | [Block scaffolding + reading time](phase-2-features.md#t22--block-scaffolding--reading-time) | T1.1 | 3h | `DONE` | block registered + render — `8d94e1b` |
 | T2.3 | [TOC + heading IDs + scroll spy](phase-2-features.md#t23--toc--heading-ids--scroll-spy) | T2.2, T1.6 | 5h | `DOING` | E2E-03 pass |
 | T2.4 | [Series nav/list blocks](phase-2-features.md#t24--series-navlist-blocks) | T2.1, T2.2 | 3h | `DOING` | E2E-04 pass |
-| T2.5 | [Search command palette + fallback](phase-2-features.md#t25--search-command-palette--fallback) | T1.4, T1.7 | 5h | `DOING` | E2E-05 pass |
+| T2.5 | [Search command palette + fallback](phase-2-features.md#t25--search-command-palette--fallback) | T1.4, T1.7 | 5h | `DONE` | 27/27 browser checks — `e990607` |
 | T2.6 | [Code block + copy + callouts](phase-2-features.md#t26--code-block--copy--callouts) | T1.3 | 3h | `DOING` | E2E-07 pass |
 | T2.7 | [Author box, related, post meta](phase-2-features.md#t27--author-box-related-posts-post-meta) | T2.2, T2.3 | 3h | `TODO` | related đúng, exclude current |
 | T2.8 | [404/search/empty states polish](phase-2-features.md#t28--404searchempty-states-polish) | T2.5, T2.6 | 2h | `TODO` | E2E-08/10 pass |

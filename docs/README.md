@@ -121,5 +121,5 @@ docs/
 
 **Đã chốt:** tên **Latent** · ngôn ngữ **tiếng Việt** · timeline **10 ngày làm việc**.
 
-**Đang chạy Wave 4:** T2.3+T2.4 TOC/series · T2.5 search · T2.6 code/callouts
+**Đang chạy Wave 4:** T2.3+T2.4 TOC/series · T2.6 code/callouts — T2.5 ✅
 **Sau Wave 3:** T2.3 TOC · T2.4 series nav · T2.5 search · T2.6 code/callouts

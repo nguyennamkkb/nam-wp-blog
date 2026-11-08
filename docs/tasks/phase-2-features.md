@@ -165,7 +165,8 @@ curl -s https://wp-blog.ddev.site/series/ | grep -o 'latent-series-list' | head
 
 ## T2.5 — Search command palette + fallback
 
-**Trạng thái:** `DOING` · **Ước lượng:** 5h · **Phụ thuộc:** T1.4, T1.7
+**Trạng thái:** `DONE` · **Ước lượng:** 5h · **Phụ thuộc:** T1.4, T1.7
+**Hoàn thành:** 2026-11-08 · commit `e990607`
 
 **Mục tiêu:** tìm kiếm nhanh bằng `Ctrl/Cmd + K`, không plugin, an toàn XSS, có fallback khi JS tắt.
 
