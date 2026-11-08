@@ -88,7 +88,8 @@ find wp-content/themes/latent/assets/fonts -name '*.woff2' -printf '%s %p\n' | s
 
 ## T1.3 — Global CSS & base elements
 
-**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T1.1, T1.2
+**Trạng thái:** `DONE` · **Ước lượng:** 3h · **Phụ thuộc:** T1.1, T1.2
+**Hoàn thành:** 2026-11-08 · commit `f632d26`
 
 **Mục tiêu:** nền CSS sạch cho toàn site: reset nhẹ, typography, link, focus, skip link, form, table, code, print.
 
