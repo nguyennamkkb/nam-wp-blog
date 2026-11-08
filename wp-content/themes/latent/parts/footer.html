@@ -1,9 +1,31 @@
-<!-- wp:group {"tagName":"footer","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<footer class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
-<div class="wp-block-group"><!-- wp:site-title {"level":0} /-->
+<!-- wp:group {"tagName":"footer","className":"latent-footer","layout":{"type":"default"}} -->
+<footer class="wp-block-group latent-footer">
+	<!-- wp:group {"className":"latent-footer__inner","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"top","flexWrap":"wrap"}} -->
+	<div class="wp-block-group latent-footer__inner">
+		<!-- wp:group {"className":"latent-footer__brand","layout":{"type":"default"}} -->
+		<div class="wp-block-group latent-footer__brand">
+			<!-- wp:site-title {"level":0,"isLink":true,"className":"latent-wordmark"} /-->
 
-<!-- wp:shortcode -->
-[latent_copyright]
-<!-- /wp:shortcode --></div>
-<!-- /wp:group --></footer>
+			<!-- wp:paragraph {"className":"latent-footer__tagline"} -->
+			<p class="latent-footer__tagline">Ghi chú thực chiến về AI, LLM và hệ thống.</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:navigation {"ariaLabel":"Liên kết chân trang","className":"latent-footer__nav","overlayMenu":"never","layout":{"type":"flex","justifyContent":"left","flexWrap":"wrap"}} -->
+			<!-- wp:navigation-link {"label":"Blog","type":"custom","url":"/blog/","kind":"custom","isTopLevelLink":true} /-->
+			<!-- wp:navigation-link {"label":"Series","type":"custom","url":"/series/","kind":"custom","isTopLevelLink":true} /-->
+			<!-- wp:navigation-link {"label":"About","type":"custom","url":"/about/","kind":"custom","isTopLevelLink":true} /-->
+			<!-- wp:navigation-link {"label":"RSS","type":"custom","url":"/feed/","kind":"custom","isTopLevelLink":true} /-->
+			<!-- wp:navigation-link {"label":"Privacy","type":"custom","url":"/privacy/","kind":"custom","isTopLevelLink":true} /-->
+		<!-- /wp:navigation -->
+
+		<!-- wp:group {"className":"latent-footer__legal","layout":{"type":"default"}} -->
+		<div class="wp-block-group latent-footer__legal">
+			<!-- wp:shortcode -->[latent_copyright]<!-- /wp:shortcode -->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+</footer>
 <!-- /wp:group -->
