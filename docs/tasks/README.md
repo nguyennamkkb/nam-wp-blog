@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| **Đang làm** | T3.4 accessibility — Wave 6 |
-| **Kế tiếp** | T3.5 security sau Wave 6 |
-| **Phase** | Phase 2 ✅ · Phase 3 — Wave 6 |
+| **Đang làm** | T3.5 security · T3.6 analytics · T3.7 test suite — Wave 7 |
+| **Kế tiếp** | Phase 4 staging/deploy sau Wave 7 |
+| **Phase** | Phase 2 ✅ · Phase 3 — Wave 7 |
 | **Đã chốt** | Tên: Latent · Ngôn ngữ: tiếng Việt · Timeline: 10 ngày làm việc |
-| **Vừa xong** | T3.3 `56f50c6` · T3.2 `b4c72e8` · T3.1 `0d7a86a` |
+| **Vừa xong** | T3.4 `df8b792` · T3.3 `56f50c6` · T3.2 `b4c72e8` · T3.1 `0d7a86a` |
 
 ---
 
@@ -62,10 +62,10 @@
 | T3.1 | [SEO & schema](phase-3-hardening.md#t31--seo--schema) | T2.8 | 4h | `DONE` | meta+OG+JSON-LD, SEO 100 — `0d7a86a` |
 | T3.2 | [OG/RSS/sitemap/robots/llms.txt](phase-3-hardening.md#t32--ogrsssitemaprobotsllmstxt) | T3.1 | 3h | `DONE` | 5 endpoints 200, RSS media, llms.txt — `b4c72e8` |
 | T3.3 | [Performance](phase-3-hardening.md#t33--performance) | T3.2, T2.8 | 5h | `DONE` | Lighthouse 99/100, sizes+preload — `56f50c6` |
-| T3.4 | [Accessibility](phase-3-hardening.md#t34--accessibility) | T2.8 | 4h | `DOING` | A11Y-01/02 pass |
-| T3.5 | [Security & backup](phase-3-hardening.md#t35--security--backup) | T0.5 | 3h | `TODO` | SEC-01..05 pass |
-| T3.6 | [Analytics](phase-3-hardening.md#t36--analytics) | T3.1 | 2h | `TODO` | event hiển thị trong Umami |
-| T3.7 | [Fixtures + full E2E/visual](phase-3-hardening.md#t37--fixtures--full-e2evisual) | T2.8, T3.3, T3.4 | 5h | `TODO` | CI E2E xanh |
+| T3.4 | [Accessibility](phase-3-hardening.md#t34--accessibility) | T2.8 | 4h | `DONE` | axe 0 violation, keyboard pass — `df8b792` |
+| T3.5 | [Security & backup](phase-3-hardening.md#t35--security--backup) | T0.5 | 3h | `DOING` | SEC-01..05 pass |
+| T3.6 | [Analytics](phase-3-hardening.md#t36--analytics) | T3.1 | 2h | `DOING` | event hiển thị trong Umami |
+| T3.7 | [Fixtures + full E2E/visual](phase-3-hardening.md#t37--fixtures--full-e2evisual) | T2.8, T3.3, T3.4 | 5h | `DOING` | CI E2E xanh |
 
 ### Phase 4 — Launch (~16h)
 

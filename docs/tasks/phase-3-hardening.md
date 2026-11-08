@@ -118,7 +118,8 @@ npx lighthouse https://wp-blog.ddev.site/ --preset=desktop --chrome-flags='--hea
 
 ## T3.4 — Accessibility
 
-**Trạng thái:** `DOING` · **Ước lượng:** 4h · **Phụ thuộc:** T2.8
+**Trạng thái:** `DONE` · **Ước lượng:** 4h · **Phụ thuộc:** T2.8
+**Hoàn thành:** 2026-11-08 · commit `df8b792`
 
 **Mục tiêu:** WCAG 2.2 AA cho toàn bộ template, keyboard và screen reader.
 
@@ -152,7 +153,7 @@ npx axe https://wp-blog.ddev.site/ --exit
 
 ## T3.5 — Security & backup
 
-**Trạng thái:** `TODO` · **Ước lượng:** 3h · **Phụ thuộc:** T0.5
+**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T0.5
 
 **Mục tiêu:** giảm bề mặt tấn công, có backup và quy trình restore đã kiểm chứng.
 
@@ -188,7 +189,7 @@ curl -sI https://staging.example.com/ | grep -Ei 'strict-transport|x-content-typ
 
 ## T3.6 — Analytics
 
-**Trạng thái:** `TODO` · **Ước lượng:** 2h · **Phụ thuộc:** T3.1
+**Trạng thái:** `DOING` · **Ước lượng:** 2h · **Phụ thuộc:** T3.1
 
 **Mục tiêu:** đo WER và hành vi đọc mà không xâm phạm privacy, không cookie banner.
 
@@ -217,7 +218,7 @@ curl -sI https://staging.example.com/ | grep -Ei 'strict-transport|x-content-typ
 
 ## T3.7 — Fixtures + full E2E/visual
 
-**Trạng thái:** `TODO` · **Ước lượng:** 5h · **Phụ thuộc:** T2.8, T3.3, T3.4
+**Trạng thái:** `DOING` · **Ước lượng:** 5h · **Phụ thuộc:** T2.8, T3.3, T3.4
 
 **Mục tiêu:** bộ dữ liệu test chuẩn + toàn bộ test tự động chạy trong CI.
 
