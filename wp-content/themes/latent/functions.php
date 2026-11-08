@@ -11,8 +11,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-require_once __DIR__ . '/inc/assets.php';
-require_once __DIR__ . '/inc/blocks.php';
+$latent_includes = array(
+	'assets',
+	'blocks',
+	'toc',
+	'series',
+	'search',
+	'block-styles',
+);
+
+foreach ( $latent_includes as $latent_include ) {
+	$latent_include_path = __DIR__ . '/inc/' . $latent_include . '.php';
+
+	if ( file_exists( $latent_include_path ) ) {
+		require_once $latent_include_path;
+	}
+}
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -31,12 +45,18 @@ add_action( 'after_setup_theme', 'latent_setup' );
  */
 function latent_enqueue_styles(): void {
 	$styles = array(
-		'latent-theme'      => 'assets/css/theme.css',
-		'latent-components' => 'assets/css/components.css',
+		'latent-theme'      => array(
+			'path' => 'assets/css/theme.css',
+			'deps' => array(),
+		),
+		'latent-components' => array(
+			'path' => 'assets/css/components.css',
+			'deps' => array( 'latent-theme' ),
+		),
 	);
 
-	foreach ( $styles as $handle => $relative_path ) {
-		$stylesheet = get_theme_file_path( $relative_path );
+	foreach ( $styles as $handle => $style ) {
+		$stylesheet = get_theme_file_path( $style['path'] );
 
 		if ( ! file_exists( $stylesheet ) ) {
 			continue;
@@ -44,8 +64,8 @@ function latent_enqueue_styles(): void {
 
 		wp_enqueue_style(
 			$handle,
-			get_theme_file_uri( $relative_path ),
-			array(),
+			get_theme_file_uri( $style['path'] ),
+			$style['deps'],
 			(string) filemtime( $stylesheet )
 		);
 	}

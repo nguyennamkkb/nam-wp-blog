@@ -42,32 +42,55 @@ function latent_preload_fonts(): void {
 add_action( 'wp_head', 'latent_preload_fonts', 1 );
 
 /**
- * Enqueues the dark palette and the theme toggle script.
+ * Enqueues feature stylesheets and scripts that exist in the theme.
  *
- * `dark.css` depends on the last core stylesheet so its token overrides win;
- * the script is deferred because first paint is handled by the inline
- * bootstrap below.
+ * Files are discovered by convention: a feature can ship `assets/css/<name>.css`
+ * or `assets/js/<name>.js` and this loader picks it up without touching PHP.
+ * `dark.css` is loaded last so its token overrides win.
  */
 function latent_enqueue_theme_assets(): void {
-	$dark_stylesheet = get_theme_file_path( 'assets/css/dark.css' );
+	$styles = array(
+		'latent-toc'    => 'assets/css/toc.css',
+		'latent-series' => 'assets/css/series.css',
+		'latent-search' => 'assets/css/search.css',
+		'latent-code'   => 'assets/css/code.css',
+		'latent-dark'   => 'assets/css/dark.css',
+	);
 
-	if ( file_exists( $dark_stylesheet ) ) {
+	foreach ( $styles as $handle => $relative_path ) {
+		$stylesheet = get_theme_file_path( $relative_path );
+
+		if ( ! file_exists( $stylesheet ) ) {
+			continue;
+		}
+
 		wp_enqueue_style(
-			'latent-dark',
-			get_theme_file_uri( 'assets/css/dark.css' ),
+			$handle,
+			get_theme_file_uri( $relative_path ),
 			array( 'latent-components' ),
-			(string) filemtime( $dark_stylesheet )
+			(string) filemtime( $stylesheet )
 		);
 	}
 
-	$theme_script = get_theme_file_path( 'assets/js/theme.js' );
+	$scripts = array(
+		'latent-theme'  => 'assets/js/theme.js',
+		'latent-toc'    => 'assets/js/toc.js',
+		'latent-search' => 'assets/js/search.js',
+		'latent-code'   => 'assets/js/code-copy.js',
+	);
 
-	if ( file_exists( $theme_script ) ) {
+	foreach ( $scripts as $handle => $relative_path ) {
+		$script = get_theme_file_path( $relative_path );
+
+		if ( ! file_exists( $script ) ) {
+			continue;
+		}
+
 		wp_enqueue_script(
-			'latent-theme',
-			get_theme_file_uri( 'assets/js/theme.js' ),
+			$handle,
+			get_theme_file_uri( $relative_path ),
 			array(),
-			(string) filemtime( $theme_script ),
+			(string) filemtime( $script ),
 			array(
 				'in_footer' => true,
 				'strategy'  => 'defer',
