@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "latent/series-list",
+	"title": "Series list",
+	"category": "theme",
+	"icon": "list-view",
+	"description": "Lists every series that has at least one post.",
+	"textdomain": "latent",
+	"supports": {
+		"html": false,
+		"multiple": false
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

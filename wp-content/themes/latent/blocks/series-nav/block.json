@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "latent/series-nav",
+	"title": "Series navigation",
+	"category": "theme",
+	"icon": "list-view",
+	"description": "Shows the ordered parts of the series the current post belongs to.",
+	"textdomain": "latent",
+	"usesContext": [ "postId" ],
+	"supports": {
+		"html": false,
+		"multiple": false
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}
