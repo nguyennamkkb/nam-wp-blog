@@ -116,11 +116,11 @@ docs/
 | Phase 0 — Foundation | ✅ Xong |
 | Phase 1 — Design system & shell | ✅ Xong |
 | Phase 2 — Features | ✅ Xong |
-| Phase 3 — Hardening | 🟡 Đang làm — T3.1 SEO running |
+| Phase 3 — Hardening | 🟡 Đang làm — T3.1 ✅, Wave 6 running |
 | Phase 3 — Hardening | ⬜ Chưa bắt đầu |
 | Phase 4 — Launch | ⬜ Chưa bắt đầu |
 
 **Đã chốt:** tên **Latent** · ngôn ngữ **tiếng Việt** · timeline **10 ngày làm việc**.
 
-**Đang chạy Wave 5:** T3.1 SEO — T2.7/T2.8 ✅. Phase 2 hoàn tất.
+**Đang chạy Wave 6:** T3.2 OG/RSS/sitemap · T3.3 performance · T3.4 accessibility
 **Sau Wave 3:** T2.3 TOC · T2.4 series nav · T2.5 search · T2.6 code/callouts

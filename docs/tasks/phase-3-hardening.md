@@ -8,7 +8,8 @@
 
 ## T3.1 — SEO & schema
 
-**Trạng thái:** `DOING` · **Ước lượng:** 4h · **Phụ thuộc:** T2.8
+**Trạng thái:** `DONE` · **Ước lượng:** 4h · **Phụ thuộc:** T2.8
+**Hoàn thành:** 2026-11-08 · commit `0d7a86a`
 
 **Mục tiêu:** metadata, canonical, schema và cấu trúc heading đúng; không trùng schema giữa theme và plugin.
 
@@ -43,7 +44,7 @@ npx lighthouse https://wp-blog.ddev.site/ --only-categories=seo --chrome-flags='
 
 ## T3.2 — OG/RSS/sitemap/robots/llms.txt
 
-**Trạng thái:** `TODO` · **Ước lượng:** 3h · **Phụ thuộc:** T3.1
+**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T3.1
 
 **Mục tiêu:** chia sẻ mạng xã hội đẹp, feed/sitemap hợp lệ, robots đúng, có `llms.txt` cho AI search.
 
@@ -80,7 +81,7 @@ curl -s https://wp-blog.ddev.site/feed/ | head -20
 
 ## T3.3 — Performance
 
-**Trạng thái:** `TODO` · **Ước lượng:** 5h · **Phụ thuộc:** T3.2, T2.8
+**Trạng thái:** `DOING` · **Ước lượng:** 5h · **Phụ thuộc:** T3.2, T2.8
 
 **Mục tiêu:** đạt budget CWV trên mobile, không có tài nguyên thừa.
 
@@ -115,7 +116,7 @@ npx lighthouse https://wp-blog.ddev.site/ --preset=desktop --chrome-flags='--hea
 
 ## T3.4 — Accessibility
 
-**Trạng thái:** `TODO` · **Ước lượng:** 4h · **Phụ thuộc:** T2.8
+**Trạng thái:** `DOING` · **Ước lượng:** 4h · **Phụ thuộc:** T2.8
 
 **Mục tiêu:** WCAG 2.2 AA cho toàn bộ template, keyboard và screen reader.
 
