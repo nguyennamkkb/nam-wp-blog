@@ -42,7 +42,8 @@ ddev wp post list --post_type=post --tax_query[0][taxonomy]=series --tax_query[0
 
 ## T2.2 — Block scaffolding + reading time
 
-**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T1.1
+**Trạng thái:** `DONE` · **Ước lượng:** 3h · **Phụ thuộc:** T1.1
+**Hoàn thành:** 2026-11-08 · commit `8d94e1b`
 
 **Mục tiêu:** hạ tầng custom block không cần build React; block đầu tiên `latent/reading-time` chạy ở editor + frontend.
 
