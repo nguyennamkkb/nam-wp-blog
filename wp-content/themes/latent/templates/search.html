@@ -8,12 +8,18 @@
 		<h1 class="wp-block-heading">Tìm kiếm</h1>
 		<!-- /wp:heading -->
 
-		<!-- wp:search {"label":"Tìm kiếm","showLabel":false,"placeholder":"Tìm bài viết…","buttonText":"Tìm","buttonPosition":"button-inside","buttonUseIcon":true} /-->
+		<!-- wp:paragraph {"className":"latent-search-page__intro"} -->
+		<p class="latent-search-page__intro">Tìm bài viết theo tiêu đề, chủ đề hoặc từ khoá. Kết quả hiển thị bên dưới.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:search {"label":"Tìm kiếm","showLabel":false,"placeholder":"Tìm bài viết…","buttonText":"Tìm","buttonPosition":"button-inside","buttonUseIcon":true,"className":"latent-search-page__form"} /-->
 
 		<!-- wp:query-title {"type":"search","level":2,"className":"latent-section__title"} /-->
 
 		<!-- wp:query {"queryId":3,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"className":"latent-query latent-grid--3","layout":{"type":"constrained"}} -->
 		<div class="wp-block-query latent-query latent-grid--3">
+			<!-- wp:query-total {"className":"latent-query-status"} /-->
+
 			<!-- wp:post-template -->
 				<!-- wp:group {"className":"latent-card","layout":{"type":"default"}} -->
 				<div class="wp-block-group latent-card">
@@ -38,15 +44,23 @@
 			<!-- /wp:post-template -->
 
 			<!-- wp:query-no-results -->
-				<!-- wp:paragraph -->
-				<p>Không tìm thấy bài viết phù hợp. Thử từ khoá khác hoặc <a href="/blog/">xem tất cả bài viết</a>.</p>
-				<!-- /wp:paragraph -->
+				<!-- wp:group {"className":"latent-empty","layout":{"type":"constrained"}} -->
+				<div class="wp-block-group latent-empty">
+					<!-- wp:heading {"level":2,"className":"latent-empty__title"} -->
+					<h2 class="wp-block-heading latent-empty__title">Không tìm thấy bài viết phù hợp</h2>
+					<!-- /wp:heading -->
+
+					<!-- wp:paragraph {"className":"latent-empty__text"} -->
+					<p class="latent-empty__text">Không có kết quả cho từ khoá này. Thử từ khoá ngắn hơn, kiểm tra chính tả, hoặc <a href="/blog/">xem tất cả bài viết</a>. Bạn cũng có thể về <a href="/">trang chủ</a>.</p>
+					<!-- /wp:paragraph -->
+				</div>
+				<!-- /wp:group -->
 			<!-- /wp:query-no-results -->
 
 			<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
-				<!-- wp:query-pagination-previous /-->
+				<!-- wp:query-pagination-previous {"label":"← Trước"} /-->
 				<!-- wp:query-pagination-numbers /-->
-				<!-- wp:query-pagination-next /-->
+				<!-- wp:query-pagination-next {"label":"Tiếp →"} /-->
 			<!-- /wp:query-pagination -->
 		</div>
 		<!-- /wp:query -->

@@ -4,31 +4,35 @@
 <main class="wp-block-group">
 	<!-- wp:group {"className":"latent-404","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group latent-404">
-		<!-- wp:heading {"level":1,"className":"latent-404__title"} -->
-		<h1 class="wp-block-heading latent-404__title">404</h1>
-		<!-- /wp:heading -->
-
-		<!-- wp:heading {"level":2} -->
-		<h2 class="wp-block-heading">Không tìm thấy trang</h2>
-		<!-- /wp:heading -->
-
-		<!-- wp:paragraph -->
-		<p>Địa chỉ này có thể đã đổi hoặc không còn tồn tại. Thử tìm nội dung bạn cần bên dưới.</p>
+		<!-- wp:paragraph {"className":"latent-404__eyebrow"} -->
+		<p class="latent-404__eyebrow">Lỗi 404</p>
 		<!-- /wp:paragraph -->
 
-		<!-- wp:search {"label":"Tìm kiếm","showLabel":false,"placeholder":"Tìm bài viết…","buttonText":"Tìm","buttonPosition":"button-inside","buttonUseIcon":true} /-->
+		<!-- wp:heading {"level":1,"className":"latent-404__title"} -->
+		<h1 class="wp-block-heading latent-404__title">Không tìm thấy trang</h1>
+		<!-- /wp:heading -->
 
-		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-		<div class="wp-block-buttons">
+		<!-- wp:paragraph {"className":"latent-404__text"} -->
+		<p class="latent-404__text">Địa chỉ này có thể đã đổi hoặc không còn tồn tại. Thử tìm nội dung bạn cần, hoặc quay lại một trong các trang dưới đây.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:search {"label":"Tìm kiếm","showLabel":false,"placeholder":"Tìm bài viết…","buttonText":"Tìm","buttonPosition":"button-inside","buttonUseIcon":true,"className":"latent-404__search"} /-->
+
+		<!-- wp:buttons {"className":"latent-404__actions","layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"}} -->
+		<div class="wp-block-buttons latent-404__actions">
 			<!-- wp:button -->
 			<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/">Về trang chủ</a></div>
 			<!-- /wp:button -->
 
-			<!-- wp:button -->
-			<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/blog/">Xem Blog</a></div>
+			<!-- wp:button {"className":"is-style-outline"} -->
+			<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/blog/">Xem Blog</a></div>
 			<!-- /wp:button -->
 		</div>
 		<!-- /wp:buttons -->
+
+		<!-- wp:paragraph {"className":"latent-404__hint"} -->
+		<p class="latent-404__hint">Hoặc xem <a href="/series/">tất cả series</a> và <a href="/about/">về tác giả</a>.</p>
+		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
 </main>

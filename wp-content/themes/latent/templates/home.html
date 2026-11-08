@@ -50,15 +50,23 @@
 			<!-- /wp:post-template -->
 
 			<!-- wp:query-no-results -->
-				<!-- wp:paragraph -->
-				<p>Chưa có bài viết nào. Hãy quay lại sau nhé.</p>
-				<!-- /wp:paragraph -->
+				<!-- wp:group {"className":"latent-empty","layout":{"type":"constrained"}} -->
+				<div class="wp-block-group latent-empty">
+					<!-- wp:heading {"level":2,"className":"latent-empty__title"} -->
+					<h2 class="wp-block-heading latent-empty__title">Chưa có bài viết nào</h2>
+					<!-- /wp:heading -->
+
+					<!-- wp:paragraph {"className":"latent-empty__text"} -->
+					<p class="latent-empty__text">Nội dung mới sẽ xuất hiện ở đây. Trong lúc chờ, bạn có thể xem <a href="/series/">các series</a> hoặc về <a href="/">trang chủ</a>.</p>
+					<!-- /wp:paragraph -->
+				</div>
+				<!-- /wp:group -->
 			<!-- /wp:query-no-results -->
 
 			<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
-				<!-- wp:query-pagination-previous /-->
+				<!-- wp:query-pagination-previous {"label":"← Trước"} /-->
 				<!-- wp:query-pagination-numbers /-->
-				<!-- wp:query-pagination-next /-->
+				<!-- wp:query-pagination-next {"label":"Tiếp →"} /-->
 			<!-- /wp:query-pagination -->
 		</div>
 		<!-- /wp:query -->

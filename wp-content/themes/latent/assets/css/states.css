@@ -1,0 +1,259 @@
+/*
+ * Latent state styles.
+ *
+ * 404, search status, empty results, pagination, focus and print polish.
+ * Shared card styles stay in components.css; this file only adds state
+ * affordances and resolves every value to theme.json tokens.
+ */
+
+/* stylelint-disable selector-class-pattern, no-descending-specificity -- BEM state classes are grouped by section. */
+
+/* 404
+   ========================================================================== */
+
+.latent-404__eyebrow {
+	margin: 0 0 var(--wp--preset--spacing--40, 1rem);
+	color: var(--wp--preset--color--accent, #2f5bff);
+	font-family: var(--wp--preset--font-family--jetbrains-mono, monospace);
+	font-size: var(--wp--preset--font-size--small, 0.875rem);
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.latent-404__title {
+	margin: 0;
+	font-size: var(--wp--preset--font-size--display, 4.5rem);
+	line-height: 1.05;
+	text-wrap: balance;
+}
+
+.latent-404__text {
+	max-width: 34rem;
+	margin: var(--wp--preset--spacing--50, 1.5rem) auto 0;
+	color: var(--wp--preset--color--muted, #6e6a61);
+	font-size: var(--wp--preset--font-size--lead, 1.25rem);
+	line-height: 1.55;
+}
+
+.latent-404__search {
+	max-width: 30rem;
+	margin: var(--wp--preset--spacing--60, 2rem) auto 0;
+}
+
+.latent-404__actions {
+	justify-content: center;
+	margin-block-start: var(--wp--preset--spacing--50, 1.5rem);
+}
+
+.latent-404__hint {
+	margin-block-start: var(--wp--preset--spacing--60, 2rem);
+	color: var(--wp--preset--color--muted, #6e6a61);
+	font-size: var(--wp--preset--font-size--small, 0.875rem);
+}
+
+/* Search page
+   ========================================================================== */
+
+.latent-search-page__intro {
+	max-width: 38rem;
+	margin: 0 0 var(--wp--preset--spacing--50, 1.5rem);
+	color: var(--wp--preset--color--muted, #6e6a61);
+	font-size: var(--wp--preset--font-size--lead, 1.25rem);
+	line-height: 1.55;
+}
+
+.latent-search-page__form {
+	max-width: 34rem;
+	margin-block-end: var(--wp--preset--spacing--60, 2rem);
+}
+
+.latent-search-page .wp-block-query-title {
+	margin-block: var(--wp--preset--spacing--60, 2rem) var(--wp--preset--spacing--40, 1rem);
+}
+
+.latent-query-status {
+	margin: 0 0 var(--wp--preset--spacing--50, 1.5rem);
+	color: var(--wp--preset--color--muted, #6e6a61);
+	font-family: var(--wp--preset--font-family--jetbrains-mono, monospace);
+	font-size: var(--wp--preset--font-size--small, 0.875rem);
+	letter-spacing: 0.06em;
+}
+
+/* Empty states
+   ========================================================================== */
+
+.latent-empty {
+	max-width: 36rem;
+	margin: var(--wp--preset--spacing--60, 2rem) auto 0;
+	padding: var(--wp--preset--spacing--60, 2rem);
+	border: 1px dashed var(--wp--preset--color--border, #e3dfd4);
+	border-radius: var(--wp--preset--border-radius--large, 12px);
+	background-color: var(--wp--preset--color--surface, #f2efe7);
+	text-align: center;
+}
+
+.latent-empty__title {
+	margin: 0 0 var(--wp--preset--spacing--30, 0.75rem);
+	font-size: var(--wp--preset--font-size--h3, 1.5rem);
+}
+
+.latent-empty__text {
+	margin: 0;
+	color: var(--wp--preset--color--muted, #6e6a61);
+}
+
+.latent-empty__text a {
+	color: var(--wp--preset--color--accent, #2f5bff);
+	font-weight: 600;
+}
+
+/* Pagination
+   ========================================================================== */
+
+.latent-query .wp-block-query-pagination {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--wp--preset--spacing--30, 0.75rem);
+	margin-top: var(--wp--preset--spacing--60, 2rem);
+	padding-top: var(--wp--preset--spacing--50, 1.5rem);
+	border-top: 1px solid var(--wp--preset--color--border, #e3dfd4);
+}
+
+.latent-query .wp-block-query-pagination-numbers {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: var(--wp--preset--spacing--20, 0.5rem);
+}
+
+.latent-query .wp-block-query-pagination .page-numbers,
+.latent-query .wp-block-query-pagination-previous,
+.latent-query .wp-block-query-pagination-next {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 2.5rem;
+	min-height: 2.5rem;
+	padding: var(--wp--preset--spacing--20, 0.5rem) var(--wp--preset--spacing--30, 0.75rem);
+	border: 1px solid var(--wp--preset--color--border, #e3dfd4);
+	border-radius: var(--wp--preset--border-radius--medium, 6px);
+	color: var(--wp--preset--color--contrast, #15171c);
+	font-family: var(--wp--preset--font-family--jetbrains-mono, monospace);
+	font-size: var(--wp--preset--font-size--small, 0.875rem);
+	font-weight: 600;
+	line-height: 1;
+	text-decoration: none;
+	transition:
+		background-color var(--wp--custom--transition, 200ms) ease,
+		border-color var(--wp--custom--transition, 200ms) ease,
+		color var(--wp--custom--transition, 200ms) ease;
+}
+
+.latent-query .wp-block-query-pagination a.page-numbers:hover,
+.latent-query .wp-block-query-pagination a.page-numbers:focus-visible,
+.latent-query .wp-block-query-pagination-previous:hover,
+.latent-query .wp-block-query-pagination-previous:focus-visible,
+.latent-query .wp-block-query-pagination-next:hover,
+.latent-query .wp-block-query-pagination-next:focus-visible {
+	border-color: var(--wp--preset--color--accent, #2f5bff);
+	background-color: var(--wp--preset--color--base, #fbfaf7);
+	color: var(--wp--preset--color--accent, #2f5bff);
+}
+
+.latent-query .wp-block-query-pagination .page-numbers.current {
+	border-color: var(--wp--preset--color--contrast, #15171c);
+	background-color: var(--wp--preset--color--contrast, #15171c);
+	color: var(--wp--preset--color--base, #fbfaf7);
+}
+
+.latent-query .wp-block-query-pagination .page-numbers.dots {
+	min-width: auto;
+	border-color: transparent;
+	background-color: transparent;
+	color: var(--wp--preset--color--muted, #6e6a61);
+}
+
+/* Focus and hover polish
+   ========================================================================== */
+
+.latent-card:focus-within {
+	border-color: var(--wp--preset--color--accent, #2f5bff);
+	outline: 2px solid var(--wp--preset--color--accent, #2f5bff);
+	outline-offset: 3px;
+	transform: translateY(-2px);
+}
+
+.latent-card a:focus-visible {
+	outline: 0;
+}
+
+.latent-empty a:focus-visible,
+.latent-404 a:focus-visible {
+	border-radius: var(--wp--preset--border-radius--small, 2px);
+	outline-offset: 3px;
+}
+
+.wp-block-button__link:focus-visible,
+.wp-block-search__button:focus-visible {
+	outline: 2px solid var(--wp--preset--color--contrast, #15171c);
+	outline-offset: 3px;
+}
+
+.wp-block-search__input:focus-visible {
+	outline: 2px solid var(--wp--preset--color--accent, #2f5bff);
+	outline-offset: 1px;
+}
+
+/* Narrow screens
+   ========================================================================== */
+
+@media (max-width: 480px) {
+
+	.latent-404__title {
+		font-size: var(--wp--preset--font-size--h1, 2.5rem);
+	}
+
+	.latent-404__text {
+		font-size: var(--wp--preset--font-size--body, 1.0625rem);
+	}
+
+	.latent-404__search {
+		max-width: none;
+	}
+
+	.latent-empty {
+		padding: var(--wp--preset--spacing--50, 1.5rem) var(--wp--preset--spacing--40, 1rem);
+	}
+
+	.latent-query .wp-block-query-pagination {
+		justify-content: center;
+	}
+}
+
+/* Print
+   ========================================================================== */
+
+@media print {
+
+	.latent-query .wp-block-query-pagination,
+	.latent-query-status,
+	.latent-404__search,
+	.latent-404__actions,
+	.latent-404__hint {
+		display: none !important;
+	}
+
+	.latent-404 {
+		padding-block: 0;
+		text-align: left;
+	}
+
+	.latent-empty {
+		border-color: var(--wp--preset--color--border, #e3dfd4);
+		background-color: transparent;
+	}
+}
