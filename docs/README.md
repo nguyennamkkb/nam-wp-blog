@@ -113,7 +113,7 @@ docs/
 | Hạng mục | Trạng thái |
 |---|---|
 | Kế hoạch & chia nhỏ task | ✅ Xong |
-| Phase 0 — Foundation | 🟡 Đang làm — T0.1 ✅, T0.2 next |
+| Phase 0 — Foundation | 🟡 Đang làm — T0.1–T0.4 ✅, T0.5 next |
 | Phase 1 — Design system & shell | ⬜ Chưa bắt đầu |
 | Phase 2 — Features | ⬜ Chưa bắt đầu |
 | Phase 3 — Hardening | ⬜ Chưa bắt đầu |
@@ -121,4 +121,4 @@ docs/
 
 **Đã chốt:** tên **Latent** · ngôn ngữ **tiếng Việt** · timeline **10 ngày làm việc**.
 
-**Task kế tiếp:** [T0.2 — Site baseline config](tasks/phase-0-foundation.md#t02--site-baseline-config)
+**Task kế tiếp:** [T0.5 — CI lint baseline](tasks/phase-0-foundation.md#t05--ci-lint-baseline)

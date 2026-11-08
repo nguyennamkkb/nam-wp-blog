@@ -10,10 +10,10 @@
 | | |
 |---|---|
 | **Đang làm** | — |
-| **Kế tiếp** | [T0.2 — Site baseline config](phase-0-foundation.md#t02--site-baseline-config) |
-| **Phase** | 0 — Foundation |
+| **Kế tiếp** | [T0.5 — CI lint baseline](phase-0-foundation.md#t05--ci-lint-baseline) |
+| **Phase** | 0 — Foundation (4/5) |
 | **Đã chốt** | Tên: Latent · Ngôn ngữ: tiếng Việt · Timeline: 10 ngày làm việc |
-| **Vừa xong** | T0.1 — Repo & .gitignore (`4468735`) |
+| **Vừa xong** | T0.1 `4468735` · T0.2 (DB) · T0.3 `c0d301b` · T0.4 `3b93d4d` |
 
 ---
 
@@ -24,10 +24,10 @@
 | ID | Task | Phụ thuộc | Ước lượng | Trạng thái | Kiểm chứng |
 |---|---|---|---|---|---|
 | T0.1 | [Repo & .gitignore](phase-0-foundation.md#t01--repo--gitignore) | — | 1h | `DONE` | `git status` sạch — commit `4468735` |
-| T0.2 | [Site baseline config](phase-0-foundation.md#t02--site-baseline-config) | T0.1 | 2h | `READY` | options/pages/categories đúng |
-| T0.3 | [Theme skeleton](phase-0-foundation.md#t03--theme-skeleton) | T0.2 | 2h | `TODO` | theme active, 200 OK |
-| T0.4 | [Plugin latent-core](phase-0-foundation.md#t04--plugin-latent-core-skeleton) | T0.2 | 1.5h | `TODO` | series taxonomy + comments off |
-| T0.5 | [CI lint baseline](phase-0-foundation.md#t05--ci-lint-baseline) | T0.1, T0.3, T0.4 | 2.5h | `TODO` | `composer lint`, `npm run lint` |
+| T0.2 | [Site baseline config](phase-0-foundation.md#t02--site-baseline-config) | T0.1 | 2h | `DONE` | options/pages/categories đúng (DB local) |
+| T0.3 | [Theme skeleton](phase-0-foundation.md#t03--theme-skeleton) | T0.2 | 2h | `DONE` | theme active, 200 OK — `c0d301b` |
+| T0.4 | [Plugin latent-core](phase-0-foundation.md#t04--plugin-latent-core-skeleton) | T0.2 | 1.5h | `DONE` | series taxonomy + comments off — `3b93d4d` |
+| T0.5 | [CI lint baseline](phase-0-foundation.md#t05--ci-lint-baseline) | T0.1, T0.3, T0.4 | 2.5h | `READY` | `composer lint`, `npm run lint` |
 
 ### Phase 1 — Design system & shell (~25h)
 

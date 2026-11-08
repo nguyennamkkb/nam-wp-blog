@@ -94,7 +94,8 @@ git ls-files | wc -l
 
 ## T0.2 — Site baseline config
 
-**Trạng thái:** `READY` · **Ước lượng:** 2h · **Phụ thuộc:** T0.1
+**Trạng thái:** `DONE` · **Ước lượng:** 2h · **Phụ thuộc:** T0.1
+**Hoàn thành:** 2026-11-08 · DB local (không có file commit)
 
 **Mục tiêu:** WordPress local có ngôn ngữ, timezone, permalink, trang và category đúng chuẩn; comments/pings đóng.
 
@@ -190,7 +191,8 @@ curl -s -o /dev/null -w '%{http_code}\n' https://wp-blog.ddev.site/
 
 ## T0.3 — Theme skeleton
 
-**Trạng thái:** `TODO` · **Ước lượng:** 2h · **Phụ thuộc:** T0.2
+**Trạng thái:** `DONE` · **Ước lượng:** 2h · **Phụ thuộc:** T0.2
+**Hoàn thành:** 2026-11-08 · commit `c0d301b`
 
 **Mục tiêu:** theme block `latent` tối thiểu được WordPress nhận, activate và render không lỗi.
 
@@ -240,7 +242,8 @@ tail -50 wp-content/debug.log 2>/dev/null || true
 
 ## T0.4 — Plugin `latent-core` skeleton
 
-**Trạng thái:** `TODO` · **Ước lượng:** 1.5h · **Phụ thuộc:** T0.2
+**Trạng thái:** `DONE` · **Ước lượng:** 1.5h · **Phụ thuộc:** T0.2
+**Hoàn thành:** 2026-11-08 · commit `3b93d4d`
 
 **Mục tiêu:** tách logic nội dung khỏi theme: taxonomy `series`, tắt comments/pings.
 
@@ -300,7 +303,7 @@ ddev wp eval 'var_dump(comments_open(1));'
 
 ## T0.5 — CI lint baseline
 
-**Trạng thái:** `TODO` · **Ước lượng:** 2.5h · **Phụ thuộc:** T0.1, T0.3, T0.4
+**Trạng thái:** `READY` · **Ước lượng:** 2.5h · **Phụ thuộc:** T0.1, T0.3, T0.4
 
 **Mục tiêu:** mọi commit được kiểm tra tự động: PHP standards, static analysis, JS/CSS lint, theme.json schema.
 

@@ -40,11 +40,15 @@ function latent_enqueue_styles(): void {
 add_action( 'wp_enqueue_scripts', 'latent_enqueue_styles' );
 
 /**
- * Returns the current year for the footer copyright.
+ * Returns the footer copyright line.
  *
  * @return string
  */
-function latent_current_year(): string {
-	return wp_date( 'Y' );
+function latent_copyright(): string {
+	return sprintf(
+		/* translators: %s: current year. */
+		esc_html__( '© %s Latent', 'latent' ),
+		esc_html( wp_date( 'Y' ) )
+	);
 }
-add_shortcode( 'current_year', 'latent_current_year' );
+add_shortcode( 'latent_copyright', 'latent_copyright' );
