@@ -51,6 +51,9 @@
 /.agents/
 /skills-lock.json
 
+# Local credentials (never commit)
+/.secrets/
+
 # OS / editor
 .DS_Store
 Thumbs.db
