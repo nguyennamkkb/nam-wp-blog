@@ -8,7 +8,7 @@
 
 ## T3.1 — SEO & schema
 
-**Trạng thái:** `TODO` · **Ước lượng:** 4h · **Phụ thuộc:** T2.8
+**Trạng thái:** `DOING` · **Ước lượng:** 4h · **Phụ thuộc:** T2.8
 
 **Mục tiêu:** metadata, canonical, schema và cấu trúc heading đúng; không trùng schema giữa theme và plugin.
 

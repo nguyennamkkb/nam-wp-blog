@@ -95,7 +95,8 @@ curl -s https://wp-blog.ddev.site/<slug>/ | grep -o 'latent-reading-time[^<]*'
 
 ## T2.3 — TOC + heading IDs + scroll spy
 
-**Trạng thái:** `DOING` · **Ước lượng:** 5h · **Phụ thuộc:** T2.2, T1.6
+**Trạng thái:** `DONE` · **Ước lượng:** 5h · **Phụ thuộc:** T2.2, T1.6
+**Hoàn thành:** 2026-11-08 · commit `a045e7c`
 
 **Mục tiêu:** mục lục tự động, link đúng, scroll spy, hỗ trợ tiếng Việt và heading trùng.
 
@@ -133,7 +134,8 @@ npx playwright test tests/e2e/toc.spec.ts
 
 ## T2.4 — Series nav/list blocks
 
-**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T2.1, T2.2
+**Trạng thái:** `DONE` · **Ước lượng:** 3h · **Phụ thuộc:** T2.1, T2.2
+**Hoàn thành:** 2026-11-08 · commit `a045e7c`
 
 **Mục tiêu:** người đọc thấy mình đang ở phần nào của series và khám phá series khác.
 
@@ -204,7 +206,8 @@ curl -s -o /dev/null -w '%{http_code}\n' 'https://wp-blog.ddev.site/wp-json/wp/v
 
 ## T2.6 — Code block + copy + callouts
 
-**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T1.3
+**Trạng thái:** `DONE` · **Ước lượng:** 3h · **Phụ thuộc:** T1.3
+**Hoàn thành:** 2026-11-08 · commit `0e3b5a3`
 
 **Mục tiêu:** code block dễ đọc, copy được, không tràn mobile; callout note/warning/tip.
 
@@ -235,7 +238,7 @@ npx playwright test tests/e2e/code.spec.ts
 
 ## T2.7 — Author box, related posts, post meta
 
-**Trạng thái:** `TODO` · **Ước lượng:** 3h · **Phụ thuộc:** T2.2, T2.3
+**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T2.2, T2.3
 
 **Mục tiêu:** tăng tin cậy và giữ chân người đọc: author rõ ràng, bài liên quan, meta đầy đủ.
 
@@ -266,7 +269,7 @@ ddev wp eval '$p=get_post(<ID>); echo $p->post_title;'
 
 ## T2.8 — 404/search/empty states polish
 
-**Trạng thái:** `TODO` · **Ước lượng:** 2h · **Phụ thuộc:** T2.5, T2.6
+**Trạng thái:** `DOING` · **Ước lượng:** 2h · **Phụ thuộc:** T2.5, T2.6
 
 **Mục tiêu:** mọi trạng thái “không có nội dung” đều rõ ràng, có đường quay lại; pagination và focus states hoàn chỉnh.
 
