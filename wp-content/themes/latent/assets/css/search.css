@@ -1,0 +1,338 @@
+/*
+ * Latent search command palette.
+ *
+ * Styles the native <dialog> used by `assets/js/search.js`: backdrop, panel,
+ * search field, result rows, keyboard-active row and the loading/empty/error
+ * status line. Every colour and size resolves to a theme.json token so the
+ * palette follows the light and dark palettes automatically.
+ */
+
+/* stylelint-disable selector-class-pattern -- BEM component classes use __ element separators. */
+
+.latent-search {
+	width: min(42rem, calc(100vw - var(--wp--preset--spacing--60, 2rem)));
+	max-width: none;
+	max-height: calc(100dvh - var(--wp--preset--spacing--70, 3rem));
+	margin: auto;
+	padding: 0;
+	overflow: visible;
+	border: 0;
+	border-radius: var(--wp--preset--border-radius--large, 12px);
+	background-color: transparent;
+	color: var(--wp--preset--color--contrast, #15171c);
+}
+
+.latent-search::backdrop {
+	background-color: color-mix(in srgb, var(--wp--preset--color--contrast, #15171c) 55%, transparent);
+	backdrop-filter: blur(2px);
+}
+
+/* Keeps the page from scrolling behind the modal. */
+html.latent-search-is-open {
+	overflow: hidden;
+}
+
+.latent-search__panel {
+	display: flex;
+	flex-direction: column;
+	max-height: inherit;
+	overflow: hidden;
+	padding: var(--wp--preset--spacing--30, 0.75rem);
+	border: 1px solid var(--wp--preset--color--border, #e3dfd4);
+	border-radius: var(--wp--preset--border-radius--large, 12px);
+	background-color: var(--wp--preset--color--base, #fbfaf7);
+	box-shadow: 0 24px 64px -20px color-mix(in srgb, var(--wp--preset--color--contrast, #15171c) 45%, transparent);
+}
+
+/* Search field
+   ========================================================================== */
+
+.latent-search__field {
+	position: relative;
+	display: flex;
+	flex: none;
+	align-items: center;
+}
+
+.latent-search__icon {
+	position: absolute;
+	left: var(--wp--preset--spacing--40, 1rem);
+	width: 20px;
+	height: 20px;
+	color: var(--wp--preset--color--muted, #6e6a61);
+	pointer-events: none;
+}
+
+.latent-search__input {
+	width: 100%;
+	min-height: 52px;
+	padding: var(--wp--preset--spacing--30, 0.75rem) 3.25rem var(--wp--preset--spacing--30, 0.75rem) 2.75rem;
+	border-color: transparent;
+	border-radius: var(--latent-radius);
+	background-color: var(--wp--preset--color--surface, #f2efe7);
+	color: var(--wp--preset--color--contrast, #15171c);
+	font-family: var(--wp--preset--font-family--inter, "Inter", system-ui, sans-serif);
+	font-size: var(--wp--preset--font-size--lead, 1.25rem);
+	appearance: none;
+}
+
+.latent-search__input:focus {
+	border-color: var(--wp--preset--color--accent, #2f5bff);
+}
+
+.latent-search__input::placeholder {
+	color: var(--wp--preset--color--muted, #6e6a61);
+	opacity: 1;
+}
+
+.latent-search__input::-webkit-search-cancel-button {
+	appearance: none;
+	-webkit-appearance: none;
+}
+
+.latent-search__close {
+	position: absolute;
+	right: var(--wp--preset--spacing--20, 0.5rem);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	min-width: 40px;
+	height: 40px;
+	min-height: 40px;
+	padding: 0;
+	border: 1px solid transparent;
+	border-radius: var(--latent-radius-full);
+	background-color: transparent;
+	color: var(--wp--preset--color--muted, #6e6a61);
+	line-height: 1;
+	cursor: pointer;
+}
+
+.latent-search__close:hover {
+	border-color: var(--wp--preset--color--border, #e3dfd4);
+	background-color: var(--wp--preset--color--base, #fbfaf7);
+	color: var(--wp--preset--color--contrast, #15171c);
+}
+
+.latent-search__close svg {
+	width: 18px;
+	height: 18px;
+}
+
+/* Status
+   ========================================================================== */
+
+.latent-search__status {
+	display: flex;
+	flex: none;
+	align-items: center;
+	gap: var(--wp--preset--spacing--20, 0.5rem);
+	min-height: 1.5em;
+	margin: var(--wp--preset--spacing--30, 0.75rem) var(--wp--preset--spacing--20, 0.5rem) 0;
+	color: var(--wp--preset--color--muted, #6e6a61);
+	font-size: var(--wp--preset--font-size--small, 0.875rem);
+	line-height: 1.5;
+}
+
+.latent-search[data-state="loading"] .latent-search__status::before {
+	content: "";
+	flex: none;
+	width: 0.875em;
+	height: 0.875em;
+	border: 2px solid color-mix(in srgb, var(--wp--preset--color--muted, #6e6a61) 35%, transparent);
+	border-top-color: var(--wp--preset--color--accent, #2f5bff);
+	border-radius: 50%;
+	animation: latent-search-spin 700ms linear infinite;
+}
+
+.latent-search[data-state="empty"] .latent-search__status {
+	color: var(--wp--preset--color--contrast, #15171c);
+}
+
+.latent-search[data-state="error"] .latent-search__status {
+	padding: var(--wp--preset--spacing--20, 0.5rem) var(--wp--preset--spacing--30, 0.75rem);
+	border-left: 3px solid var(--wp--preset--color--accent, #2f5bff);
+	border-radius: var(--latent-radius-small);
+	background-color: color-mix(in srgb, var(--wp--preset--color--accent, #2f5bff) 10%, var(--wp--preset--color--base, #fbfaf7));
+	color: var(--wp--preset--color--contrast, #15171c);
+}
+
+@keyframes latent-search-spin {
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Results
+   ========================================================================== */
+
+.latent-search__results {
+	display: grid;
+	flex: 1 1 auto;
+	gap: 2px;
+	max-height: min(50dvh, 24rem);
+	margin: var(--wp--preset--spacing--30, 0.75rem) 0 0;
+	padding: 0;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	list-style: none;
+}
+
+.latent-search__results[hidden] {
+	display: none;
+}
+
+.latent-search__result-item {
+	margin: 0;
+	list-style: none;
+}
+
+.latent-search__result {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.125rem var(--wp--preset--spacing--40, 1rem);
+	padding: var(--wp--preset--spacing--30, 0.75rem) var(--wp--preset--spacing--40, 1rem);
+	border: 1px solid transparent;
+	border-radius: var(--latent-radius);
+	color: var(--wp--preset--color--contrast, #15171c);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.latent-search__result:hover,
+.latent-search__result[aria-selected="true"] {
+	border-color: var(--wp--preset--color--border, #e3dfd4);
+	background-color: var(--wp--preset--color--surface, #f2efe7);
+	box-shadow: inset 3px 0 0 var(--wp--preset--color--accent, #2f5bff);
+	color: var(--wp--preset--color--accent, #2f5bff);
+}
+
+.latent-search__result-title {
+	min-width: 0;
+	font-size: var(--wp--preset--font-size--body, 1.0625rem);
+	font-weight: 500;
+	line-height: 1.4;
+	overflow-wrap: anywhere;
+}
+
+.latent-search__result-subtype {
+	flex: none;
+	color: var(--wp--preset--color--muted, #6e6a61);
+	font-family: var(--wp--preset--font-family--jetbrains-mono, "JetBrains Mono", monospace);
+	font-size: 0.6875rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	line-height: 1.6;
+	text-transform: uppercase;
+}
+
+.latent-search__result[aria-selected="true"] .latent-search__result-subtype {
+	color: var(--wp--preset--color--accent, #2f5bff);
+}
+
+/* Hints
+   ========================================================================== */
+
+.latent-search__hint {
+	display: flex;
+	flex: none;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.25rem var(--wp--preset--spacing--20, 0.5rem);
+	margin: var(--wp--preset--spacing--30, 0.75rem) 0 0;
+	padding-top: var(--wp--preset--spacing--30, 0.75rem);
+	border-top: 1px solid var(--wp--preset--color--border, #e3dfd4);
+	color: var(--wp--preset--color--muted, #6e6a61);
+	font-size: var(--wp--preset--font-size--small, 0.875rem);
+	line-height: 1.5;
+}
+
+.latent-search__hint kbd {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 1.5em;
+	padding: 0.0625rem 0.375rem;
+	border: 1px solid var(--wp--preset--color--border, #e3dfd4);
+	border-radius: var(--latent-radius-small);
+	background-color: var(--wp--preset--color--surface, #f2efe7);
+	color: var(--wp--preset--color--muted, #6e6a61);
+	font-family: var(--wp--preset--font-family--jetbrains-mono, "JetBrains Mono", monospace);
+	font-size: 0.75rem;
+	line-height: 1.4;
+}
+
+/* Motion
+   ========================================================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+
+	.latent-search[open] .latent-search__panel {
+		animation: latent-search-enter 160ms ease-out;
+	}
+}
+
+@keyframes latent-search-enter {
+
+	from {
+		opacity: 0;
+		transform: translateY(-0.5rem) scale(0.99);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.latent-search[data-state="loading"] .latent-search__status::before {
+		animation: none;
+	}
+}
+
+/* Mobile
+   ========================================================================== */
+
+@media (max-width: 640px) {
+
+	.latent-search {
+		width: calc(100vw - var(--wp--preset--spacing--40, 1rem));
+		max-height: calc(100dvh - var(--wp--preset--spacing--40, 1rem));
+	}
+
+	.latent-search__panel {
+		padding: var(--wp--preset--spacing--20, 0.5rem);
+	}
+
+	.latent-search__input {
+		min-height: 48px;
+		font-size: var(--wp--preset--font-size--body, 1.0625rem);
+	}
+
+	.latent-search__results {
+		max-height: 45dvh;
+	}
+
+	.latent-search__result {
+		padding: var(--wp--preset--spacing--30, 0.75rem);
+	}
+
+	.latent-search__result-title {
+		font-size: var(--wp--preset--font-size--small, 0.875rem);
+	}
+
+	.latent-search__result-subtype {
+		font-size: 0.625rem;
+	}
+}
+
+/* Print
+   ========================================================================== */
+
+@media print {
+
+	.latent-search {
+		display: none !important;
+	}
+}
