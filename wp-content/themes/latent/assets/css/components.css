@@ -188,7 +188,7 @@
 }
 
 .latent-card__media img {
-	aspect-ratio: 16 / 10;
+	aspect-ratio: 1200 / 630;
 	object-fit: cover;
 	border-radius: 0;
 }
@@ -245,24 +245,17 @@
    ========================================================================== */
 
 .latent-featured {
-	display: grid;
+	display: block;
 	overflow: hidden;
 	border: 1px solid var(--wp--preset--color--border, #e3dfd4);
 	border-radius: var(--wp--preset--border-radius--large, 12px);
 	background-color: var(--wp--preset--color--surface, #f2efe7);
 }
 
-@media (min-width: 800px) {
-
-	.latent-featured {
-		grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-	}
-}
-
 .latent-featured__media img {
 	width: 100%;
-	height: 100%;
-	aspect-ratio: 16 / 10;
+	height: auto;
+	aspect-ratio: 1200 / 630;
 	object-fit: cover;
 	border-radius: 0;
 }
