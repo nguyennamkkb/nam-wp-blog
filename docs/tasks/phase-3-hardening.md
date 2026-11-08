@@ -189,7 +189,8 @@ curl -sI https://staging.example.com/ | grep -Ei 'strict-transport|x-content-typ
 
 ## T3.6 — Analytics
 
-**Trạng thái:** `DOING` · **Ước lượng:** 2h · **Phụ thuộc:** T3.1
+**Trạng thái:** `DONE` · **Ước lượng:** 2h · **Phụ thuộc:** T3.1
+**Hoàn thành:** 2026-11-08 · commit `43fb261`
 
 **Mục tiêu:** đo WER và hành vi đọc mà không xâm phạm privacy, không cookie banner.
 
