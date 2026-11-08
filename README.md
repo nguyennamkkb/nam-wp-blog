@@ -68,10 +68,10 @@ Chỉ **theme/plugin tự phát triển** được track trong Git. WordPress co
 | Phase | Trạng thái |
 |---|---|
 | 0 — Foundation | ✅ Xong |
-| 1 — Design system & shell | Đang làm — Wave 1 (T1.1/T1.3/T1.4) |
+| 1 — Design system & shell | Đang làm — Wave 1: T1.1+T1.2 ✅, T1.3/T1.4 running |
 | 2 — Features | Chưa bắt đầu |
 | 3 — Hardening | Chưa bắt đầu |
 | 4 — Launch | Chưa bắt đầu |
 
-Đang chạy: T1.1 + T1.2 (Worker A) · T1.3 (Worker B) · T1.4 (Worker C).
+Đang chạy: T1.3 (Worker B) · T1.4 (Worker C). T1.1 + T1.2 đã xong (`9ffe06b`).
 Sau Wave 1: [`T1.5 — Home/front-page`](docs/tasks/phase-1-design-shell.md#t15--homefront-page-template).

@@ -9,7 +9,8 @@
 
 ## T1.1 — theme.json tokens
 
-**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T0.3
+**Trạng thái:** `DONE` · **Ước lượng:** 3h · **Phụ thuộc:** T0.3
+**Hoàn thành:** 2026-11-08 · commit `9ffe06b`
 
 **Mục tiêu:** toàn bộ màu, typography, spacing, layout, radius được khai báo một lần trong `theme.json`; không hardcode trong template.
 
@@ -46,7 +47,8 @@ curl -s https://wp-blog.ddev.site/ | grep -o -- '--wp--preset--color--accent' | 
 
 ## T1.2 — Self-host fonts
 
-**Trạng thái:** `TODO` · **Ước lượng:** 2h · **Phụ thuộc:** T1.1
+**Trạng thái:** `DONE` · **Ước lượng:** 2h · **Phụ thuộc:** T1.1
+**Hoàn thành:** 2026-11-08 · commit `9ffe06b` · 5 file woff2, 194KB
 
 **Mục tiêu:** Newsreader, Inter, JetBrains Mono tải từ chính domain; hỗ trợ đầy đủ dấu tiếng Việt; không request Google Fonts.
 
