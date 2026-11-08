@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| **Đang làm** | T1.5 (Worker A) · T1.6 (Worker B) · T1.7 (Worker C) — Wave 2 |
+| **Đang làm** | T1.7 (Worker C) — blog/archive/page/search/404 |
 | **Kế tiếp** | T1.8 dark mode sau Wave 2 |
 | **Phase** | 0 ✅ · Phase 1 — Design system & shell (Wave 2) |
 | **Đã chốt** | Tên: Latent · Ngôn ngữ: tiếng Việt · Timeline: 10 ngày làm việc |
-| **Vừa xong** | Wave 1: T1.1+T1.2 `9ffe06b` · T1.3 `f632d26` · T1.4 `f3bb3b2` · component CSS `a77b975`/`db3bf76` |
+| **Vừa xong** | T1.5 `8691d88` · T1.6 `0689380` · CSS fix `bcfe57a` · Wave 1 `9ffe06b`/`f632d26`/`f3bb3b2` |
 
 ---
 
@@ -37,7 +37,7 @@
 | T1.2 | [Self-host fonts](phase-1-design-shell.md#t12--self-host-fonts) | T1.1 | 2h | `DONE` | 194KB, self-host, không Google Fonts — `9ffe06b` |
 | T1.3 | [Global CSS & base elements](phase-1-design-shell.md#t13--global-css--base-elements) | T1.1, T1.2 | 3h | `DOING` | focus/skip link/không tràn ngang |
 | T1.4 | [Header/footer parts](phase-1-design-shell.md#t14--headerfooter-parts) | T1.3 | 3h | `DONE` | nav keyboard + mobile menu — `f3bb3b2` |
-| T1.5 | [Home/front-page template](phase-1-design-shell.md#t15--homefront-page-template) | T1.4 | 4h | `DOING` | hero + featured + latest |
+| T1.5 | [Home/front-page template](phase-1-design-shell.md#t15--homefront-page-template) | T1.4 | 4h | `DONE` | hero + featured + latest — `8691d88` |
 | T1.6 | [Single template](phase-1-design-shell.md#t16--single-template) | T1.4 | 4h | `DONE` | single render, H1=1, no comments — `0689380` |
 | T1.7 | [Archive/page/search/404](phase-1-design-shell.md#t17--archivepagesearch404-templates) | T1.4 | 4h | `DOING` | status code + query loop |
 | T1.8 | [Dark mode](phase-1-design-shell.md#t18--dark-mode) | T1.3, T1.4 | 2h | `TODO` | không flash, persist |

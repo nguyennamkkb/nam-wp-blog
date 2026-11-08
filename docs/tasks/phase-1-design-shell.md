@@ -163,7 +163,8 @@ npx playwright test tests/e2e/header.spec.ts
 
 ## T1.5 — Home/front-page template
 
-**Trạng thái:** `DOING` · **Ước lượng:** 4h · **Phụ thuộc:** T1.4
+**Trạng thái:** `DONE` · **Ước lượng:** 4h · **Phụ thuộc:** T1.4
+**Hoàn thành:** 2026-11-08 · commit `8691d88` · ảnh cover fix `bcfe57a`
 
 **Mục tiêu:** trang chủ editorial: hero, featured post, latest grid, series strip, about CTA.
 

@@ -114,12 +114,12 @@ docs/
 |---|---|
 | Kế hoạch & chia nhỏ task | ✅ Xong |
 | Phase 0 — Foundation | ✅ Xong |
-| Phase 1 — Design system & shell | 🟡 Đang làm — Wave 1 ✅, Wave 2 running (T1.5/T1.6/T1.7) |
+| Phase 1 — Design system & shell | 🟡 Đang làm — T1.5/T1.6 ✅, T1.7 running |
 | Phase 2 — Features | ⬜ Chưa bắt đầu |
 | Phase 3 — Hardening | ⬜ Chưa bắt đầu |
 | Phase 4 — Launch | ⬜ Chưa bắt đầu |
 
 **Đã chốt:** tên **Latent** · ngôn ngữ **tiếng Việt** · timeline **10 ngày làm việc**.
 
-**Đang chạy:** Wave 2 — T1.5 home · T1.6 single · T1.7 archive/page/search/404
+**Đang chạy:** T1.7 — blog/archive/page/search/404
 **Sau Wave 2:** T1.8 dark mode → Phase 2
