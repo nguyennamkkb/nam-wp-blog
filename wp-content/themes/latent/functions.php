@@ -29,11 +29,21 @@ add_action( 'after_setup_theme', 'latent_setup' );
  * Enqueues theme stylesheet if it exists.
  */
 function latent_enqueue_styles(): void {
-	$stylesheet = get_theme_file_path( 'assets/css/theme.css' );
-	if ( file_exists( $stylesheet ) ) {
+	$styles = array(
+		'latent-theme'      => 'assets/css/theme.css',
+		'latent-components' => 'assets/css/components.css',
+	);
+
+	foreach ( $styles as $handle => $relative_path ) {
+		$stylesheet = get_theme_file_path( $relative_path );
+
+		if ( ! file_exists( $stylesheet ) ) {
+			continue;
+		}
+
 		wp_enqueue_style(
-			'latent-theme',
-			get_theme_file_uri( 'assets/css/theme.css' ),
+			$handle,
+			get_theme_file_uri( $relative_path ),
 			array(),
 			(string) filemtime( $stylesheet )
 		);
