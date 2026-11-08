@@ -270,7 +270,8 @@ ddev wp eval '$p=get_post(<ID>); echo $p->post_title;'
 
 ## T2.8 — 404/search/empty states polish
 
-**Trạng thái:** `DOING` · **Ước lượng:** 2h · **Phụ thuộc:** T2.5, T2.6
+**Trạng thái:** `DONE` · **Ước lượng:** 2h · **Phụ thuộc:** T2.5, T2.6
+**Hoàn thành:** 2026-11-08 · commit `3ba698d`
 
 **Mục tiêu:** mọi trạng thái “không có nội dung” đều rõ ràng, có đường quay lại; pagination và focus states hoàn chỉnh.
 

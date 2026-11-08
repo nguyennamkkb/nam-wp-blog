@@ -115,12 +115,12 @@ docs/
 | Kế hoạch & chia nhỏ task | ✅ Xong |
 | Phase 0 — Foundation | ✅ Xong |
 | Phase 1 — Design system & shell | ✅ Xong |
-| Phase 2 — Features | 🟡 Đang làm — T2.1–T2.7 ✅, T2.8 running |
-| Phase 3 — Hardening | 🟡 Bắt đầu — T3.1 SEO running |
+| Phase 2 — Features | ✅ Xong |
+| Phase 3 — Hardening | 🟡 Đang làm — T3.1 SEO running |
 | Phase 3 — Hardening | ⬜ Chưa bắt đầu |
 | Phase 4 — Launch | ⬜ Chưa bắt đầu |
 
 **Đã chốt:** tên **Latent** · ngôn ngữ **tiếng Việt** · timeline **10 ngày làm việc**.
 
-**Đang chạy Wave 5:** T2.8 states polish · T3.1 SEO — T2.7 ✅
+**Đang chạy Wave 5:** T3.1 SEO — T2.7/T2.8 ✅. Phase 2 hoàn tất.
 **Sau Wave 3:** T2.3 TOC · T2.4 series nav · T2.5 search · T2.6 code/callouts

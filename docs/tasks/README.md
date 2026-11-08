@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| **Đang làm** | T2.8 states polish · T3.1 SEO — Wave 5 |
+| **Đang làm** | T3.1 SEO & schema — Wave 5 |
 | **Kế tiếp** | T3.2 OG/RSS/sitemap/llms.txt sau Wave 5 |
-| **Phase** | Phase 2 gần xong · Phase 3 bắt đầu |
+| **Phase** | Phase 2 ✅ · Phase 3 — T3.1 running |
 | **Đã chốt** | Tên: Latent · Ngôn ngữ: tiếng Việt · Timeline: 10 ngày làm việc |
-| **Vừa xong** | T2.7 `e8070ee` · Wave 4: T2.3+T2.4 `a045e7c` · T2.5 `e990607` · T2.6 `0e3b5a3` |
+| **Vừa xong** | T2.8 `3ba698d` · T2.7 `e8070ee` · Wave 4 `a045e7c`/`e990607`/`0e3b5a3` |
 
 ---
 
@@ -53,7 +53,7 @@
 | T2.5 | [Search command palette + fallback](phase-2-features.md#t25--search-command-palette--fallback) | T1.4, T1.7 | 5h | `DONE` | 27/27 browser checks — `e990607` |
 | T2.6 | [Code block + copy + callouts](phase-2-features.md#t26--code-block--copy--callouts) | T1.3 | 3h | `DONE` | copy + callouts — `0e3b5a3` |
 | T2.7 | [Author box, related, post meta](phase-2-features.md#t27--author-box-related-posts-post-meta) | T2.2, T2.3 | 3h | `DONE` | reading time + 3 related, exclude current — `e8070ee` |
-| T2.8 | [404/search/empty states polish](phase-2-features.md#t28--404searchempty-states-polish) | T2.5, T2.6 | 2h | `DOING` | E2E-08/10 pass |
+| T2.8 | [404/search/empty states polish](phase-2-features.md#t28--404searchempty-states-polish) | T2.5, T2.6 | 2h | `DONE` | 404 + empty states + pagination — `3ba698d` |
 
 ### Phase 3 — Hardening (~26h)
 
