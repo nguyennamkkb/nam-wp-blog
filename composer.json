@@ -1,0 +1,34 @@
+{
+	"$schema": "https://getcomposer.org/schema.json",
+	"name": "latent/wp-blog",
+	"description": "Latent — custom WordPress theme and site plugin.",
+	"type": "project",
+	"license": "GPL-2.0-or-later",
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.2",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"phpstan/phpstan": "^2.1",
+		"phpunit/phpunit": "^11.5",
+		"squizlabs/php_codesniffer": "^3.13",
+		"szepeviktor/phpstan-wordpress": "^2.0",
+		"wp-coding-standards/wpcs": "^3.4",
+		"wp-phpunit/wp-phpunit": "^7.1",
+		"yoast/phpunit-polyfills": "^4.0"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		},
+		"sort-packages": true
+	},
+	"scripts": {
+		"lint": "phpcs --standard=phpcs.xml.dist",
+		"lint:fix": "phpcbf --standard=phpcs.xml.dist",
+		"analyse": "phpstan analyse --configuration=phpstan.neon.dist --no-progress"
+	},
+	"scripts-descriptions": {
+		"lint": "Run PHP_CodeSniffer with the WordPress Coding Standards.",
+		"lint:fix": "Auto-fix PHP_CodeSniffer violations where possible.",
+		"analyse": "Run PHPStan static analysis."
+	}
+}

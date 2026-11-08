@@ -25,7 +25,7 @@ require_once LATENT_CORE_PATH . 'inc/comments.php';
 /**
  * Run on plugin activation.
  */
-function latent_core_activate() {
+function latent_core_activate(): void {
 	latent_core_register_series_taxonomy();
 	flush_rewrite_rules();
 }
@@ -34,7 +34,7 @@ register_activation_hook( __FILE__, 'latent_core_activate' );
 /**
  * Run on plugin deactivation.
  */
-function latent_core_deactivate() {
+function latent_core_deactivate(): void {
 	flush_rewrite_rules();
 }
 register_deactivation_hook( __FILE__, 'latent_core_deactivate' );

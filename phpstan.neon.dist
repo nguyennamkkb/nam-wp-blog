@@ -1,0 +1,14 @@
+includes:
+	- vendor/szepeviktor/phpstan-wordpress/extension.neon
+
+parameters:
+	level: 6
+	paths:
+		- wp-content/themes/latent
+		- wp-content/plugins/latent-core
+	excludePaths:
+		- wp-content/uploads/*
+		- vendor/*
+		- node_modules/*
+	# WordPress 7.1 stubs are provided by php-stubs/wordpress-stubs v7.1.2
+	# (installed transitively by szepeviktor/phpstan-wordpress).

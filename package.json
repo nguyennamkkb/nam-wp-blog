@@ -1,0 +1,19 @@
+{
+	"name": "latent",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"description": "Latent — custom WordPress block theme and site plugin.",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"lint": "npm run lint:js && npm run lint:css",
+		"lint:js": "eslint --no-error-on-unmatched-pattern \"wp-content/themes/latent/**/*.{js,jsx,mjs,cjs}\" \"wp-content/plugins/latent-core/**/*.{js,jsx,mjs,cjs}\" eslint.config.js",
+		"lint:css": "stylelint \"wp-content/themes/latent/**/*.css\" \"wp-content/plugins/latent-core/**/*.css\""
+	},
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^28.1.0",
+		"@wordpress/stylelint-config": "^27.1.0",
+		"eslint": "^9.0.0",
+		"stylelint": "^17.14.1"
+	}
+}

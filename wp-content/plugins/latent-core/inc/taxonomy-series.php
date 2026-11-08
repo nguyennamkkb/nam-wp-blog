@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Register the series taxonomy for posts.
  */
-function latent_core_register_series_taxonomy() {
+function latent_core_register_series_taxonomy(): void {
 	$labels = array(
 		'name'                       => __( 'Series', 'latent' ),
 		'singular_name'              => __( 'Series', 'latent' ),
