@@ -238,7 +238,8 @@ npx playwright test tests/e2e/code.spec.ts
 
 ## T2.7 — Author box, related posts, post meta
 
-**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T2.2, T2.3
+**Trạng thái:** `DONE` · **Ước lượng:** 3h · **Phụ thuộc:** T2.2, T2.3
+**Hoàn thành:** 2026-11-08 · commit `e8070ee`
 
 **Mục tiêu:** tăng tin cậy và giữ chân người đọc: author rõ ràng, bài liên quan, meta đầy đủ.
 
