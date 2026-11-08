@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bggxwvvk/public_html/staging.simpleverse.io.vn
+    - /bin/mkdir -p $DEPLOYPATH/wp-content/themes/latent
+    - /bin/cp -R wp-content/themes/latent/. $DEPLOYPATH/wp-content/themes/latent/
+    - /bin/mkdir -p $DEPLOYPATH/wp-content/plugins/latent-core
+    - /bin/cp -R wp-content/plugins/latent-core/. $DEPLOYPATH/wp-content/plugins/latent-core/
