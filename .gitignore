@@ -1,0 +1,57 @@
+# WordPress core
+/wp-admin/
+/wp-includes/
+/wp-*.php
+!/wp-config-sample.php
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+
+# Config & secrets
+/wp-config.php
+/wp-config-ddev.php
+/.env
+/.env.*
+
+# Runtime
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/languages/
+/wp-content/advanced-cache.php
+/wp-content/object-cache.php
+/wp-content/db.php
+/wp-content/debug.log
+/wp-content/index.php
+
+# Chỉ track theme/plugin tự phát triển
+/wp-content/themes/*
+!/wp-content/themes/latent/
+/wp-content/plugins/*
+!/wp-content/plugins/latent-core/
+
+# Dependencies / build
+/vendor/
+/node_modules/
+/coverage/
+
+# Test artifacts
+/test-results/
+/playwright-report/
+/blob-report/
+
+# Backups & logs
+*.sql
+*.sql.gz
+*.tar.gz
+*.log
+
+# Agent tooling (local)
+/.agents/
+/skills-lock.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
