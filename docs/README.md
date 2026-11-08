@@ -113,12 +113,12 @@ docs/
 | Hạng mục | Trạng thái |
 |---|---|
 | Kế hoạch & chia nhỏ task | ✅ Xong |
-| Phase 0 — Foundation | ⬜ Chưa bắt đầu |
+| Phase 0 — Foundation | 🟡 Đang làm — T0.1 ✅, T0.2 next |
 | Phase 1 — Design system & shell | ⬜ Chưa bắt đầu |
 | Phase 2 — Features | ⬜ Chưa bắt đầu |
 | Phase 3 — Hardening | ⬜ Chưa bắt đầu |
 | Phase 4 — Launch | ⬜ Chưa bắt đầu |
 
-**Task kế tiếp:** [T0.1 — Repo & .gitignore](tasks/phase-0-foundation.md#t01--repo--gitignore)
+**Đã chốt:** tên **Latent** · ngôn ngữ **tiếng Việt** · timeline **10 ngày làm việc**.
 
-> Trước khi bắt đầu, cần chốt 3 quyết định ở [plan/09-decisions.md](plan/09-decisions.md): tên thương hiệu, ngôn ngữ, timeline.
+**Task kế tiếp:** [T0.2 — Site baseline config](tasks/phase-0-foundation.md#t02--site-baseline-config)

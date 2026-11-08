@@ -67,10 +67,10 @@ Chỉ **theme/plugin tự phát triển** được track trong Git. WordPress co
 
 | Phase | Trạng thái |
 |---|---|
-| 0 — Foundation | Đang làm (T0.1) |
+| 0 — Foundation | Đang làm — T0.1 ✅, T0.2 next |
 | 1 — Design system & shell | Chưa bắt đầu |
 | 2 — Features | Chưa bắt đầu |
 | 3 — Hardening | Chưa bắt đầu |
 | 4 — Launch | Chưa bắt đầu |
 
-Task kế tiếp: [`T0.1 — Repo & .gitignore`](docs/tasks/phase-0-foundation.md#t01--repo--gitignore).
+Task kế tiếp: [`T0.2 — Site baseline config`](docs/tasks/phase-0-foundation.md#t02--site-baseline-config).

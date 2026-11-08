@@ -2,13 +2,14 @@
 
 > **Mục tiêu phase:** repo sạch, site baseline đúng, theme/plugin skeleton, CI lint.
 > **Thời lượng:** ~9h · **Cổng ra:** `ddev start` OK, theme active, `composer lint` + `npm run lint` xanh.
-> **Trạng thái phase:** `READY`
+> **Trạng thái phase:** `DOING`
 
 ---
 
 ## T0.1 — Repo & .gitignore
 
-**Trạng thái:** `READY` · **Ước lượng:** 1h · **Phụ thuộc:** —
+**Trạng thái:** `DONE` · **Ước lượng:** 1h · **Phụ thuộc:** —
+**Hoàn thành:** 2026-11-08 · commit `4468735`
 
 **Mục tiêu:** có repo Git sạch, chỉ track code/config cần thiết; WP core, secret và file runtime không bị commit.
 
@@ -93,7 +94,7 @@ git ls-files | wc -l
 
 ## T0.2 — Site baseline config
 
-**Trạng thái:** `TODO` · **Ước lượng:** 2h · **Phụ thuộc:** T0.1
+**Trạng thái:** `READY` · **Ước lượng:** 2h · **Phụ thuộc:** T0.1
 
 **Mục tiêu:** WordPress local có ngôn ngữ, timezone, permalink, trang và category đúng chuẩn; comments/pings đóng.
 

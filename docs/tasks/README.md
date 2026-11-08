@@ -10,9 +10,10 @@
 | | |
 |---|---|
 | **Đang làm** | — |
-| **Kế tiếp** | [T0.1 — Repo & .gitignore](phase-0-foundation.md#t01--repo--gitignore) |
+| **Kế tiếp** | [T0.2 — Site baseline config](phase-0-foundation.md#t02--site-baseline-config) |
 | **Phase** | 0 — Foundation |
-| **Điều kiện bắt đầu** | Chốt 3 quyết định: tên thương hiệu, ngôn ngữ, timeline |
+| **Đã chốt** | Tên: Latent · Ngôn ngữ: tiếng Việt · Timeline: 10 ngày làm việc |
+| **Vừa xong** | T0.1 — Repo & .gitignore (`4468735`) |
 
 ---
 
@@ -22,8 +23,8 @@
 
 | ID | Task | Phụ thuộc | Ước lượng | Trạng thái | Kiểm chứng |
 |---|---|---|---|---|---|
-| T0.1 | [Repo & .gitignore](phase-0-foundation.md#t01--repo--gitignore) | — | 1h | `READY` | `git status` sạch |
-| T0.2 | [Site baseline config](phase-0-foundation.md#t02--site-baseline-config) | T0.1 | 2h | `TODO` | options/pages/categories đúng |
+| T0.1 | [Repo & .gitignore](phase-0-foundation.md#t01--repo--gitignore) | — | 1h | `DONE` | `git status` sạch — commit `4468735` |
+| T0.2 | [Site baseline config](phase-0-foundation.md#t02--site-baseline-config) | T0.1 | 2h | `READY` | options/pages/categories đúng |
 | T0.3 | [Theme skeleton](phase-0-foundation.md#t03--theme-skeleton) | T0.2 | 2h | `TODO` | theme active, 200 OK |
 | T0.4 | [Plugin latent-core](phase-0-foundation.md#t04--plugin-latent-core-skeleton) | T0.2 | 1.5h | `TODO` | series taxonomy + comments off |
 | T0.5 | [CI lint baseline](phase-0-foundation.md#t05--ci-lint-baseline) | T0.1, T0.3, T0.4 | 2.5h | `TODO` | `composer lint`, `npm run lint` |
