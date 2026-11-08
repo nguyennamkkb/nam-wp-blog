@@ -2,13 +2,15 @@
 
 > **Mục tiêu phase:** staging giống production, full regression, nội dung launch, DNS/CDN, go-live an toàn.
 > **Thời lượng:** ~16h · **Cổng ra:** launch checklist 100%; production ổn định 24h; có retro.
-> **Trạng thái phase:** `TODO`
+> **Trạng thái phase:** `DOING`
 
 ---
 
 ## T4.1 — Staging & deploy pipeline
 
-**Trạng thái:** `TODO` · **Ước lượng:** 4h · **Phụ thuộc:** T3.5, T3.7
+**Trạng thái:** `DOING` · **Ước lượng:** 4h · **Phụ thuộc:** T3.5, T3.7
+**Đã làm:** staging `staging.simpleverse.io.vn` + WordPress + theme/plugin + nội dung; deploy qua cPanel Git.
+**Còn lại:** SSL tin cậy, backup/rollback staging, basic auth/noindex nếu cần.
 
 **Mục tiêu:** deploy lặp lại được, có staging bảo vệ, có rollback.
 

@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| **Đang làm** | T3.7 test suite — Wave 7 |
-| **Kế tiếp** | Phase 4 staging/deploy sau Wave 7 |
-| **Phase** | Phase 2 ✅ · Phase 3 — Wave 7 |
+| **Đang làm** | T4.1 — Staging đã chạy, hoàn thiện SSL/backup/rollback |
+| **Kế tiếp** | T4.2 Full regression sau khi chốt SSL |
+| **Phase** | Phase 3 ✅ · Phase 4 — staging |
 | **Đã chốt** | Tên: Latent · Ngôn ngữ: tiếng Việt · Timeline: 10 ngày làm việc |
-| **Vừa xong** | T3.5 `779dbe5` · T3.6 `43fb261` · T3.4 `df8b792` · T3.3 `56f50c6` |
+| **Vừa xong** | T3.7 `5aabf4f` · Phase 3 ✅ · staging: https://staging.simpleverse.io.vn |
 
 ---
 
@@ -65,13 +65,13 @@
 | T3.4 | [Accessibility](phase-3-hardening.md#t34--accessibility) | T2.8 | 4h | `DONE` | axe 0 violation, keyboard pass — `df8b792` |
 | T3.5 | [Security & backup](phase-3-hardening.md#t35--security--backup) | T0.5 | 3h | `DONE` | headers, XML-RPC 403, backup script — `779dbe5` |
 | T3.6 | [Analytics](phase-3-hardening.md#t36--analytics) | T3.1 | 2h | `DONE` | Umami options + 6 privacy-safe events — `43fb261` |
-| T3.7 | [Fixtures + full E2E/visual](phase-3-hardening.md#t37--fixtures--full-e2evisual) | T2.8, T3.3, T3.4 | 5h | `DOING` | CI E2E xanh |
+| T3.7 | [Fixtures + full E2E/visual](phase-3-hardening.md#t37--fixtures--full-e2evisual) | T2.8, T3.3, T3.4 | 5h | `DONE` | 43/43 Chromium, axe 0 serious — `5aabf4f` |
 
 ### Phase 4 — Launch (~16h)
 
 | ID | Task | Phụ thuộc | Ước lượng | Trạng thái | Kiểm chứng |
 |---|---|---|---|---|---|
-| T4.1 | [Staging & deploy pipeline](phase-4-launch.md#t41--staging--deploy-pipeline) | T3.5, T3.7 | 4h | `TODO` | deploy + rollback |
+| T4.1 | [Staging & deploy pipeline](phase-4-launch.md#t41--staging--deploy-pipeline) | T3.5, T3.7 | 4h | `DOING` | staging live; SSL/rollback pending |
 | T4.2 | [Full regression & reports](phase-4-launch.md#t42--full-regression--reports) | T4.1, T3.7 | 3h | `TODO` | báo cáo release pass |
 | T4.3 | [Content launch set](phase-4-launch.md#t43--content-launch-set) | T2.8 | 4h | `TODO` | 4 bài + 3 series + pages |
 | T4.4 | [DNS/CDN/Search Console/uptime](phase-4-launch.md#t44--dnscdnsearch-consoleuptime) | T4.2 | 3h | `TODO` | launch checklist |

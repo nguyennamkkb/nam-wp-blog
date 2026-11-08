@@ -220,7 +220,8 @@ curl -sI https://staging.example.com/ | grep -Ei 'strict-transport|x-content-typ
 
 ## T3.7 — Fixtures + full E2E/visual
 
-**Trạng thái:** `DOING` · **Ước lượng:** 5h · **Phụ thuộc:** T2.8, T3.3, T3.4
+**Trạng thái:** `DONE` · **Ước lượng:** 5h · **Phụ thuộc:** T2.8, T3.3, T3.4
+**Hoàn thành:** 2026-11-08 · commit `5aabf4f` · 43/43 Chromium, axe 0 serious
 
 **Mục tiêu:** bộ dữ liệu test chuẩn + toàn bộ test tự động chạy trong CI.
 

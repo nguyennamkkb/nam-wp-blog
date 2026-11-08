@@ -116,11 +116,11 @@ docs/
 | Phase 0 — Foundation | ✅ Xong |
 | Phase 1 — Design system & shell | ✅ Xong |
 | Phase 2 — Features | ✅ Xong |
-| Phase 3 — Hardening | 🟡 Đang làm — T3.1–T3.4 ✅, Wave 7 running |
-| Phase 3 — Hardening | ⬜ Chưa bắt đầu |
-| Phase 4 — Launch | ⬜ Chưa bắt đầu |
+| Phase 3 — Hardening | ✅ Xong |
+| Phase 4 — Launch | 🟡 Đang làm — staging live, SSL pending |
 
 **Đã chốt:** tên **Latent** · ngôn ngữ **tiếng Việt** · timeline **10 ngày làm việc**.
 
-**Đang chạy Wave 7:** T3.7 test suite — T3.5/T3.6 ✅
+**Staging:** https://staging.simpleverse.io.vn — WordPress + theme/plugin + 8 bài demo đã deploy.
+**SSL:** Let's Encrypt HTTP-01 bị hosting reset; đang chờ BKHost/Cloudflare/DNS-01.
 **Sau Wave 3:** T2.3 TOC · T2.4 series nav · T2.5 search · T2.6 code/callouts
