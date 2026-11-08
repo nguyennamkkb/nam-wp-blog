@@ -1,0 +1,149 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group">
+	<!-- wp:group {"align":"wide","className":"latent-hero","layout":{"type":"default"}} -->
+	<div class="wp-block-group alignwide latent-hero">
+		<!-- wp:group {"layout":{"type":"default"}} -->
+		<div class="wp-block-group">
+			<!-- wp:paragraph {"className":"latent-hero__eyebrow"} -->
+			<p class="latent-hero__eyebrow">AI ENGINEERING · GHI CHÚ THỰC CHIẾN</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:heading {"level":1,"className":"latent-hero__title"} -->
+			<h1 class="wp-block-heading latent-hero__title">Ghi chú thực chiến về <em>AI engineering</em>.</h1>
+			<!-- /wp:heading -->
+
+			<!-- wp:paragraph {"className":"latent-hero__deck"} -->
+			<p class="latent-hero__deck">Những ghi chép thực tế về LLM, RAG và AI agent: cách chúng hoạt động trong production, chỗ nào hay vỡ và cách đo lường thay vì đoán.</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:buttons {"className":"latent-hero__actions"} -->
+			<div class="wp-block-buttons latent-hero__actions">
+				<!-- wp:button -->
+				<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/blog/">Đọc bài mới nhất</a></div>
+				<!-- /wp:button -->
+
+				<!-- wp:button {"className":"is-style-outline"} -->
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/about/">Về tác giả</a></div>
+				<!-- /wp:button -->
+			</div>
+			<!-- /wp:buttons -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:query {"queryId":10,"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false},"layout":{"type":"default"}} -->
+		<div class="wp-block-query">
+			<!-- wp:post-template -->
+			<!-- wp:group {"className":"latent-featured","layout":{"type":"default"}} -->
+			<div class="wp-block-group latent-featured">
+				<!-- wp:post-featured-image {"isLink":true,"className":"latent-featured__media"} /-->
+				<!-- wp:group {"className":"latent-featured__body","layout":{"type":"constrained"}} -->
+				<div class="wp-block-group latent-featured__body">
+					<!-- wp:group {"className":"latent-card__meta","layout":{"type":"flex","flexWrap":"wrap"}} -->
+					<div class="wp-block-group latent-card__meta">
+						<!-- wp:post-terms {"term":"category","className":"latent-card__category"} /-->
+						<!-- wp:post-date {"className":"latent-card__date"} /-->
+					</div>
+					<!-- /wp:group -->
+					<!-- wp:post-title {"isLink":true,"level":2,"className":"latent-featured__title"} /-->
+					<!-- wp:post-excerpt {"excerptLength":26,"className":"latent-card__excerpt"} /-->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
+			<!-- /wp:post-template -->
+		</div>
+		<!-- /wp:query -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"align":"wide","className":"latent-section","layout":{"type":"default"}} -->
+	<div class="wp-block-group alignwide latent-section">
+		<!-- wp:group {"className":"latent-section__head","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+		<div class="wp-block-group latent-section__head">
+			<!-- wp:heading {"level":2,"className":"latent-section__title"} -->
+			<h2 class="wp-block-heading latent-section__title">Bài mới</h2>
+			<!-- /wp:heading -->
+
+			<!-- wp:paragraph {"className":"latent-section__link"} -->
+			<p class="latent-section__link"><a href="/blog/">Tất cả bài →</a></p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:query {"queryId":11,"query":{"perPage":6,"pages":0,"offset":1,"postType":"post","order":"desc","orderBy":"date","inherit":false},"className":"latent-query latent-grid\u002d\u002d3","layout":{"type":"default"}} -->
+		<div class="wp-block-query latent-query latent-grid--3">
+			<!-- wp:post-template -->
+			<!-- wp:group {"className":"latent-card","layout":{"type":"default"}} -->
+			<div class="wp-block-group latent-card">
+				<!-- wp:post-featured-image {"isLink":true,"className":"latent-card__media"} /-->
+				<!-- wp:group {"className":"latent-card__body","layout":{"type":"constrained"}} -->
+				<div class="wp-block-group latent-card__body">
+					<!-- wp:group {"className":"latent-card__meta","layout":{"type":"flex","flexWrap":"wrap"}} -->
+					<div class="wp-block-group latent-card__meta">
+						<!-- wp:post-terms {"term":"category","className":"latent-card__category"} /-->
+						<!-- wp:post-date {"className":"latent-card__date"} /-->
+					</div>
+					<!-- /wp:group -->
+					<!-- wp:post-title {"isLink":true,"level":2,"className":"latent-card__title"} /-->
+					<!-- wp:post-excerpt {"excerptLength":22,"className":"latent-card__excerpt"} /-->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
+			<!-- /wp:post-template -->
+
+			<!-- wp:query-no-results -->
+			<!-- wp:paragraph -->
+			<p>Chưa có bài viết nào.</p>
+			<!-- /wp:paragraph -->
+			<!-- /wp:query-no-results -->
+		</div>
+		<!-- /wp:query -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"align":"wide","className":"latent-section","layout":{"type":"default"}} -->
+	<div class="wp-block-group alignwide latent-section">
+		<!-- wp:group {"className":"latent-series-strip","layout":{"type":"default"}} -->
+		<div class="wp-block-group latent-series-strip">
+			<!-- wp:heading {"level":2,"className":"latent-series-strip__title"} -->
+			<h2 class="wp-block-heading latent-series-strip__title">Series</h2>
+			<!-- /wp:heading -->
+
+			<!-- wp:paragraph {"className":"latent-series-strip__text"} -->
+			<p class="latent-series-strip__text">Các chuỗi bài nhiều phần đi từ nền tảng đến vận hành: RAG, agent, evaluation và chi phí LLM trong production.</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:paragraph -->
+			<p><a href="/series/">Xem tất cả series →</a></p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"align":"wide","className":"latent-section","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignwide latent-section">
+		<!-- wp:heading {"level":2} -->
+		<h2 class="wp-block-heading">Về Latent</h2>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>Latent là nơi mình ghi lại những bài học khi xây dựng hệ thống AI: từ những thử nghiệm nhỏ đến các quyết định kiến trúc ảnh hưởng tới độ trễ, chi phí và chất lượng.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons">
+			<!-- wp:button -->
+			<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/about/">Đọc về tác giả</a></div>
+			<!-- /wp:button -->
+		</div>
+		<!-- /wp:buttons -->
+	</div>
+	<!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
