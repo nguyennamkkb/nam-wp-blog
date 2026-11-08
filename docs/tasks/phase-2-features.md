@@ -8,7 +8,8 @@
 
 ## T2.1 — Series taxonomy & archive
 
-**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T0.4, T1.7
+**Trạng thái:** `DONE` · **Ước lượng:** 3h · **Phụ thuộc:** T0.4, T1.7
+**Hoàn thành:** 2026-11-08 · commit `e27e37f`
 
 **Mục tiêu:** series hoạt động như một chuyên mục nhiều phần: archive, thứ tự, điều hướng, trang tổng hợp.
 

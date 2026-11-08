@@ -69,9 +69,9 @@ Chỉ **theme/plugin tự phát triển** được track trong Git. WordPress co
 |---|---|
 | 0 — Foundation | ✅ Xong |
 | 1 — Design system & shell | Đang làm — T1.5/T1.6/T1.7 ✅, T1.8 running |
-| 2 — Features | Đang làm — T2.1/T2.2 running |
+| 2 — Features | Đang làm — T2.1 ✅, T2.2 running |
 | 3 — Hardening | Chưa bắt đầu |
 | 4 — Launch | Chưa bắt đầu |
 
-Đang chạy Wave 3: T1.8 dark mode · T2.1 series archive · T2.2 block scaffolding.
+Đang chạy Wave 3: T1.8 dark mode · T2.2 block scaffolding.
 Sau Wave 3: T2.3 TOC · T2.4 series nav · T2.5 search · T2.6 code/callouts.
