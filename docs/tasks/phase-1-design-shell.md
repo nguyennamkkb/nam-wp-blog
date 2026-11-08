@@ -3,7 +3,8 @@
 > **Mục tiêu phase:** bộ token thiết kế, font, CSS nền, header/footer, 5 template chính, dark mode.
 > **Thời lượng:** ~25h · **Cổng ra:** tất cả template render với fixture; visual QA 3 breakpoints; dark mode không flash.
 > **Trạng thái phase:** `DOING`
-> **Wave 1:** Worker A = T1.1 + T1.2 · Worker B = T1.3 · Worker C = T1.4
+> **Wave 1:** ✅ T1.1+T1.2 · T1.3 · T1.4
+> **Wave 2:** Worker A = T1.5 · Worker B = T1.6 · Worker C = T1.7
 
 ---
 
@@ -162,7 +163,7 @@ npx playwright test tests/e2e/header.spec.ts
 
 ## T1.5 — Home/front-page template
 
-**Trạng thái:** `TODO` · **Ước lượng:** 4h · **Phụ thuộc:** T1.4
+**Trạng thái:** `DOING` · **Ước lượng:** 4h · **Phụ thuộc:** T1.4
 
 **Mục tiêu:** trang chủ editorial: hero, featured post, latest grid, series strip, about CTA.
 
@@ -196,7 +197,7 @@ curl -s https://wp-blog.ddev.site/ | grep -o '<h1[^>]*>' | wc -l
 
 ## T1.6 — Single template
 
-**Trạng thái:** `TODO` · **Ước lượng:** 4h · **Phụ thuộc:** T1.4
+**Trạng thái:** `DOING` · **Ước lượng:** 4h · **Phụ thuộc:** T1.4
 
 **Mục tiêu:** trang bài viết chuyên nghiệp: title, meta, featured image, content, author box, không comments.
 
@@ -231,7 +232,7 @@ curl -s https://wp-blog.ddev.site/<slug>/ | grep -c '<h1'
 
 ## T1.7 — Archive/page/search/404 templates
 
-**Trạng thái:** `TODO` · **Ước lượng:** 4h · **Phụ thuộc:** T1.4
+**Trạng thái:** `DOING` · **Ước lượng:** 4h · **Phụ thuộc:** T1.4
 
 **Mục tiêu:** đủ template cho blog index, archive, page, search, 404, fallback.
 
