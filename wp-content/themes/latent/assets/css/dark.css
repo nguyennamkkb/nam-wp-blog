@@ -1,0 +1,115 @@
+/*
+ * Latent dark mode.
+ *
+ * Overrides the theme.json preset colour tokens, so every component that
+ * already resolves to a preset token flips automatically. The attribute
+ * selector handles a manual choice; the media query is the no-JS fallback
+ * and also follows the OS when the visitor has not chosen yet.
+ */
+
+/* stylelint-disable selector-class-pattern -- WordPress core BEM class name. */
+
+/* Manual dark choice (also covers system dark when data-theme="dark"). */
+:root[data-theme="dark"] {
+	--wp--preset--color--base: #0C0F14;
+	--wp--preset--color--contrast: #F2F0E8;
+	--wp--preset--color--accent: #8FA8FF;
+	--wp--preset--color--accent-2: #D6FF62;
+	--wp--preset--color--muted: #9B978D;
+	--wp--preset--color--surface: #151A22;
+	--wp--preset--color--border: #272D37;
+	--wp--preset--color--code-bg: #05070A;
+	--wp--preset--color--code-text: #E9E7DF;
+	color-scheme: dark;
+}
+
+/* System preference fallback when no explicit light choice is set. */
+@media (prefers-color-scheme: dark) {
+
+	:root:not([data-theme="light"]) {
+		--wp--preset--color--base: #0C0F14;
+		--wp--preset--color--contrast: #F2F0E8;
+		--wp--preset--color--accent: #8FA8FF;
+		--wp--preset--color--accent-2: #D6FF62;
+		--wp--preset--color--muted: #9B978D;
+		--wp--preset--color--surface: #151A22;
+		--wp--preset--color--border: #272D37;
+		--wp--preset--color--code-bg: #05070A;
+		--wp--preset--color--code-text: #E9E7DF;
+		color-scheme: dark;
+	}
+}
+
+/* Keep an explicit light choice light, even when the OS prefers dark. */
+:root[data-theme="light"] {
+	color-scheme: light;
+}
+
+/*
+ * Token-level exception: accent-2 is a light yellow-green in both palettes,
+ * so highlighted text needs dark ink in dark mode to stay AA.
+ */
+:root[data-theme="dark"] mark,
+:root[data-theme="dark"] ::selection {
+	background-color: var(--wp--preset--color--accent-2, #D6FF62);
+	color: var(--wp--preset--color--base, #0C0F14);
+}
+
+@media (prefers-color-scheme: dark) {
+
+	:root:not([data-theme="light"]) mark,
+	:root:not([data-theme="light"]) ::selection {
+		background-color: var(--wp--preset--color--accent-2, #D6FF62);
+		color: var(--wp--preset--color--base, #0C0F14);
+	}
+}
+
+/*
+ * Core paints the search wrapper white inside a `:where()` rule, so a plain
+ * class selector is enough to keep the search block on the dark palette.
+ */
+:root[data-theme="dark"] .wp-block-search__inside-wrapper {
+	border-color: var(--wp--preset--color--border, #272D37);
+	background-color: var(--wp--preset--color--base, #0C0F14);
+}
+
+@media (prefers-color-scheme: dark) {
+
+	:root:not([data-theme="light"]) .wp-block-search__inside-wrapper {
+		border-color: var(--wp--preset--color--border, #272D37);
+		background-color: var(--wp--preset--color--base, #0C0F14);
+	}
+}
+
+/*
+ * Form controls already resolve to tokens; restating them keeps native
+ * widgets (which ignore inherited colour) on the dark palette.
+ */
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] textarea {
+	border-color: var(--wp--preset--color--border, #272D37);
+	background-color: var(--wp--preset--color--base, #0C0F14);
+	color: var(--wp--preset--color--contrast, #F2F0E8);
+}
+
+:root[data-theme="dark"] input::placeholder,
+:root[data-theme="dark"] textarea::placeholder {
+	color: var(--wp--preset--color--muted, #9B978D);
+}
+
+@media (prefers-color-scheme: dark) {
+
+	:root:not([data-theme="light"]) input,
+	:root:not([data-theme="light"]) select,
+	:root:not([data-theme="light"]) textarea {
+		border-color: var(--wp--preset--color--border, #272D37);
+		background-color: var(--wp--preset--color--base, #0C0F14);
+		color: var(--wp--preset--color--contrast, #F2F0E8);
+	}
+
+	:root:not([data-theme="light"]) input::placeholder,
+	:root:not([data-theme="light"]) textarea::placeholder {
+		color: var(--wp--preset--color--muted, #9B978D);
+	}
+}
