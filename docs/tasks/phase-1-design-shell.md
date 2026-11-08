@@ -197,7 +197,8 @@ curl -s https://wp-blog.ddev.site/ | grep -o '<h1[^>]*>' | wc -l
 
 ## T1.6 — Single template
 
-**Trạng thái:** `DOING` · **Ước lượng:** 4h · **Phụ thuộc:** T1.4
+**Trạng thái:** `DONE` · **Ước lượng:** 4h · **Phụ thuộc:** T1.4
+**Hoàn thành:** 2026-11-08 · commit `0689380`
 
 **Mục tiêu:** trang bài viết chuyên nghiệp: title, meta, featured image, content, author box, không comments.
 

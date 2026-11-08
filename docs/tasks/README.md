@@ -38,7 +38,7 @@
 | T1.3 | [Global CSS & base elements](phase-1-design-shell.md#t13--global-css--base-elements) | T1.1, T1.2 | 3h | `DOING` | focus/skip link/không tràn ngang |
 | T1.4 | [Header/footer parts](phase-1-design-shell.md#t14--headerfooter-parts) | T1.3 | 3h | `DONE` | nav keyboard + mobile menu — `f3bb3b2` |
 | T1.5 | [Home/front-page template](phase-1-design-shell.md#t15--homefront-page-template) | T1.4 | 4h | `DOING` | hero + featured + latest |
-| T1.6 | [Single template](phase-1-design-shell.md#t16--single-template) | T1.4 | 4h | `DOING` | bài viết render đúng |
+| T1.6 | [Single template](phase-1-design-shell.md#t16--single-template) | T1.4 | 4h | `DONE` | single render, H1=1, no comments — `0689380` |
 | T1.7 | [Archive/page/search/404](phase-1-design-shell.md#t17--archivepagesearch404-templates) | T1.4 | 4h | `DOING` | status code + query loop |
 | T1.8 | [Dark mode](phase-1-design-shell.md#t18--dark-mode) | T1.3, T1.4 | 2h | `TODO` | không flash, persist |
 
