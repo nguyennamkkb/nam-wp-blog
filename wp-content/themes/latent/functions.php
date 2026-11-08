@@ -23,6 +23,8 @@ $latent_includes = array(
 	'llms',
 	'feed',
 	'performance',
+	'security',
+	'analytics',
 );
 
 foreach ( $latent_includes as $latent_include ) {

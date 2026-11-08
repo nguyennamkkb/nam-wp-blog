@@ -76,10 +76,11 @@ function latent_enqueue_theme_assets(): void {
 	}
 
 	$scripts = array(
-		'latent-theme'  => 'assets/js/theme.js',
-		'latent-toc'    => 'assets/js/toc.js',
-		'latent-search' => 'assets/js/search.js',
-		'latent-code'   => 'assets/js/code-copy.js',
+		'latent-theme'     => 'assets/js/theme.js',
+		'latent-toc'       => 'assets/js/toc.js',
+		'latent-search'    => 'assets/js/search.js',
+		'latent-code'      => 'assets/js/code-copy.js',
+		'latent-analytics' => 'assets/js/analytics.js',
 	);
 
 	foreach ( $scripts as $handle => $relative_path ) {
