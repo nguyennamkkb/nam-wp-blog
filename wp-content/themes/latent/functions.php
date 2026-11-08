@@ -11,6 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+require_once __DIR__ . '/inc/assets.php';
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
