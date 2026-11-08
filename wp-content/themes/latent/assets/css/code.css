@@ -1,0 +1,184 @@
+/*
+ * Latent code blocks and callouts.
+ *
+ * Code blocks keep their horizontal scroll inside the block so a long line
+ * never widens the page, and the copy toolbar owns the dark code surface so
+ * the button stays readable in both palettes. Callouts borrow the theme
+ * tokens (accent, accent-2, surface, muted) and never set a hardcoded text
+ * colour, so dark mode and AA contrast follow the palette automatically.
+ */
+
+/* stylelint-disable selector-class-pattern -- WordPress core BEM class names. */
+
+/* Code blocks
+   ========================================================================== */
+
+.latent-prose pre,
+.latent-prose .wp-block-code {
+	box-sizing: border-box;
+	max-width: 100%;
+	border: 0;
+	overflow-x: auto;
+	overflow-y: hidden;
+	overscroll-behavior-inline: contain;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Core wraps code with `break-spaces`; keep real code monospaced on one line
+   and let the block itself scroll instead of widening the article. */
+.latent-prose pre code {
+	white-space: pre;
+}
+
+/* Inline code: readable inside paragraphs, list items and table cells. */
+.latent-prose :not(pre) > code {
+	padding: 0.15em 0.4em;
+	border: 1px solid var(--wp--preset--color--border, #e3dfd4);
+	border-radius: var(--wp--preset--border-radius--small, 2px);
+	background-color: var(--wp--preset--color--surface, #f2efe7);
+	color: var(--wp--preset--color--contrast, #15171c);
+	font-family: var(--wp--preset--font-family--jetbrains-mono, monospace);
+	font-size: 0.9em;
+	overflow-wrap: anywhere;
+}
+
+/* JS-owned shell: headless browsers and no-JS readers keep plain core markup. */
+.latent-code {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	overflow: hidden;
+	border-radius: var(--wp--preset--border-radius--large, 12px);
+	background-color: var(--wp--preset--color--code-bg, #101318);
+}
+
+.latent-code > pre,
+.latent-code > pre.wp-block-code {
+	flex: 1 1 auto;
+	min-width: 0;
+	max-width: 100%;
+	margin: 0;
+	border-radius: 0;
+	background-color: transparent;
+	scrollbar-color: rgb(255 255 255 / 28%) transparent;
+}
+
+.latent-code__toolbar {
+	display: flex;
+	gap: var(--wp--preset--spacing--30, 0.75rem);
+	align-items: center;
+	justify-content: space-between;
+	min-height: 2.25rem;
+	padding: 0.35rem var(--wp--preset--spacing--30, 0.75rem);
+	border-bottom: 1px solid rgb(255 255 255 / 12%);
+	background-color: rgb(255 255 255 / 4%);
+	color: var(--wp--preset--color--code-text, #e9e7df);
+	font-family: var(--wp--preset--font-family--jetbrains-mono, monospace);
+	font-size: 0.75rem;
+	line-height: 1;
+}
+
+.latent-code__language {
+	overflow: hidden;
+	color: var(--wp--preset--color--code-text, #e9e7df);
+	font-size: 0.6875rem;
+	letter-spacing: 0.1em;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	white-space: nowrap;
+	opacity: 0.72;
+}
+
+.latent-code__actions {
+	display: flex;
+	gap: var(--wp--preset--spacing--20, 0.5rem);
+	align-items: center;
+	margin-inline-start: auto;
+}
+
+.latent-code__status {
+	color: var(--wp--preset--color--accent-2, #c9f24d);
+	font-size: 0.6875rem;
+	letter-spacing: 0.04em;
+}
+
+.latent-code__copy {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.35rem 0.6rem;
+	border: 1px solid rgb(255 255 255 / 24%);
+	border-radius: var(--wp--preset--border-radius--small, 2px);
+	background-color: transparent;
+	color: var(--wp--preset--color--code-text, #e9e7df);
+	font: inherit;
+	font-family: var(--wp--preset--font-family--jetbrains-mono, monospace);
+	font-size: 0.6875rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.latent-code__copy:hover {
+	border-color: var(--wp--preset--color--accent-2, #c9f24d);
+	background-color: rgb(255 255 255 / 10%);
+}
+
+.latent-code__copy[data-copied="true"] {
+	border-color: var(--wp--preset--color--accent-2, #c9f24d);
+	color: var(--wp--preset--color--accent-2, #c9f24d);
+}
+
+.latent-code__copy:focus-visible {
+	outline: 2px solid var(--wp--preset--color--accent-2, #c9f24d);
+	outline-offset: 2px;
+}
+
+/* Callouts
+   ========================================================================== */
+
+.is-style-note,
+.is-style-warning,
+.is-style-tip {
+	padding: var(--wp--preset--spacing--50, 1.5rem);
+	border-inline-start: 4px solid var(--wp--preset--color--muted, #6e6a61);
+	border-start-start-radius: var(--wp--preset--border-radius--medium, 6px);
+	border-end-start-radius: var(--wp--preset--border-radius--medium, 6px);
+	border-start-end-radius: var(--wp--preset--border-radius--large, 12px);
+	border-end-end-radius: var(--wp--preset--border-radius--large, 12px);
+	background-color: var(--wp--preset--color--surface, #f2efe7);
+}
+
+.is-style-note {
+	border-inline-start-color: var(--wp--preset--color--accent, #2f5bff);
+	background-color: color-mix(in srgb, var(--wp--preset--color--accent, #2f5bff) 9%, var(--wp--preset--color--base, #fbfaf7));
+}
+
+.is-style-warning {
+	border-inline-start-width: 5px;
+	border-inline-start-color: var(--wp--preset--color--accent-2, #c9f24d);
+	background-color: color-mix(in srgb, var(--wp--preset--color--accent-2, #c9f24d) 18%, var(--wp--preset--color--base, #fbfaf7));
+}
+
+.is-style-tip {
+	border-inline-start-color: var(--wp--preset--color--muted, #6e6a61);
+	background-color: var(--wp--preset--color--surface, #f2efe7);
+}
+
+/* Margin inside callouts should not add a second gap at the bottom. */
+.is-style-note > :last-child,
+.is-style-warning > :last-child,
+.is-style-tip > :last-child {
+	margin-block-end: 0;
+}
+
+/* Small screens: keep the toolbar compact and the code inside the block. */
+@media (max-width: 600px) {
+
+	.latent-code__toolbar {
+		padding-inline: var(--wp--preset--spacing--20, 0.5rem);
+	}
+
+	.latent-code__copy {
+		padding-inline: 0.5rem;
+	}
+}
