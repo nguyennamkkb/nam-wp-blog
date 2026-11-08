@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "latent/reading-time",
+	"title": "Reading time",
+	"category": "theme",
+	"icon": "clock",
+	"description": "Estimated reading time for the current post.",
+	"textdomain": "latent",
+	"usesContext": [ "postId" ],
+	"supports": {
+		"html": false,
+		"multiple": false
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}
