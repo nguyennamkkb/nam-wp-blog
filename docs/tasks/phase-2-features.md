@@ -8,7 +8,7 @@
 
 ## T2.1 — Series taxonomy & archive
 
-**Trạng thái:** `TODO` · **Ước lượng:** 3h · **Phụ thuộc:** T0.4, T1.7
+**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T0.4, T1.7
 
 **Mục tiêu:** series hoạt động như một chuyên mục nhiều phần: archive, thứ tự, điều hướng, trang tổng hợp.
 
@@ -41,7 +41,7 @@ ddev wp post list --post_type=post --tax_query[0][taxonomy]=series --tax_query[0
 
 ## T2.2 — Block scaffolding + reading time
 
-**Trạng thái:** `TODO` · **Ước lượng:** 3h · **Phụ thuộc:** T1.1
+**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T1.1
 
 **Mục tiêu:** hạ tầng custom block không cần build React; block đầu tiên `latent/reading-time` chạy ở editor + frontend.
 

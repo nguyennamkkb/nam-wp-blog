@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| **Đang làm** | T1.7 (Worker C) — blog/archive/page/search/404 |
-| **Kế tiếp** | T1.8 dark mode sau Wave 2 |
-| **Phase** | 0 ✅ · Phase 1 — Design system & shell (Wave 2) |
+| **Đang làm** | T1.8 dark mode · T2.1 series archive · T2.2 block scaffolding |
+| **Kế tiếp** | T2.3 TOC sau Wave 3 |
+| **Phase** | Phase 1 (T1.8) + Phase 2 (T2.1/T2.2) — Wave 3 |
 | **Đã chốt** | Tên: Latent · Ngôn ngữ: tiếng Việt · Timeline: 10 ngày làm việc |
-| **Vừa xong** | T1.5 `8691d88` · T1.6 `0689380` · CSS fix `bcfe57a` · Wave 1 `9ffe06b`/`f632d26`/`f3bb3b2` |
+| **Vừa xong** | Wave 2: T1.5 `8691d88` · T1.6 `0689380` · T1.7 `1cae590` · CSS fix `bcfe57a` |
 
 ---
 
@@ -39,15 +39,15 @@
 | T1.4 | [Header/footer parts](phase-1-design-shell.md#t14--headerfooter-parts) | T1.3 | 3h | `DONE` | nav keyboard + mobile menu — `f3bb3b2` |
 | T1.5 | [Home/front-page template](phase-1-design-shell.md#t15--homefront-page-template) | T1.4 | 4h | `DONE` | hero + featured + latest — `8691d88` |
 | T1.6 | [Single template](phase-1-design-shell.md#t16--single-template) | T1.4 | 4h | `DONE` | single render, H1=1, no comments — `0689380` |
-| T1.7 | [Archive/page/search/404](phase-1-design-shell.md#t17--archivepagesearch404-templates) | T1.4 | 4h | `DOING` | status code + query loop |
-| T1.8 | [Dark mode](phase-1-design-shell.md#t18--dark-mode) | T1.3, T1.4 | 2h | `TODO` | không flash, persist |
+| T1.7 | [Archive/page/search/404](phase-1-design-shell.md#t17--archivepagesearch404-templates) | T1.4 | 4h | `DONE` | 8 cards, search 200, 404 đúng — `1cae590` |
+| T1.8 | [Dark mode](phase-1-design-shell.md#t18--dark-mode) | T1.3, T1.4 | 2h | `DOING` | không flash, persist |
 
 ### Phase 2 — Features (~27h)
 
 | ID | Task | Phụ thuộc | Ước lượng | Trạng thái | Kiểm chứng |
 |---|---|---|---|---|---|
-| T2.1 | [Series taxonomy & archive](phase-2-features.md#t21--series-taxonomy--archive) | T0.4, T1.7 | 3h | `TODO` | `/series/{slug}/` 200 |
-| T2.2 | [Block scaffolding + reading time](phase-2-features.md#t22--block-scaffolding--reading-time) | T1.1 | 3h | `TODO` | block preview + render |
+| T2.1 | [Series taxonomy & archive](phase-2-features.md#t21--series-taxonomy--archive) | T0.4, T1.7 | 3h | `DOING` | `/series/{slug}/` 200 |
+| T2.2 | [Block scaffolding + reading time](phase-2-features.md#t22--block-scaffolding--reading-time) | T1.1 | 3h | `DOING` | block preview + render |
 | T2.3 | [TOC + heading IDs + scroll spy](phase-2-features.md#t23--toc--heading-ids--scroll-spy) | T2.2, T1.6 | 5h | `TODO` | E2E-03 pass |
 | T2.4 | [Series nav/list blocks](phase-2-features.md#t24--series-navlist-blocks) | T2.1, T2.2 | 3h | `TODO` | E2E-04 pass |
 | T2.5 | [Search command palette + fallback](phase-2-features.md#t25--search-command-palette--fallback) | T1.4, T1.7 | 5h | `TODO` | E2E-05 pass |

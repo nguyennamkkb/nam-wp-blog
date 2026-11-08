@@ -234,7 +234,8 @@ curl -s https://wp-blog.ddev.site/<slug>/ | grep -c '<h1'
 
 ## T1.7 — Archive/page/search/404 templates
 
-**Trạng thái:** `DOING` · **Ước lượng:** 4h · **Phụ thuộc:** T1.4
+**Trạng thái:** `DONE` · **Ước lượng:** 4h · **Phụ thuộc:** T1.4
+**Hoàn thành:** 2026-11-08 · commit `1cae590`
 
 **Mục tiêu:** đủ template cho blog index, archive, page, search, 404, fallback.
 
@@ -269,7 +270,7 @@ done
 
 ## T1.8 — Dark mode
 
-**Trạng thái:** `TODO` · **Ước lượng:** 2h · **Phụ thuộc:** T1.3, T1.4
+**Trạng thái:** `DOING` · **Ước lượng:** 2h · **Phụ thuộc:** T1.3, T1.4
 
 **Mục tiêu:** dark mode theo hệ thống, toggle thủ công, lưu lựa chọn, không flash sai màu.
 
