@@ -126,7 +126,8 @@ grep -nE '#[0-9a-fA-F]{3,8}' wp-content/themes/latent/assets/css/theme.css | hea
 
 ## T1.4 — Header/footer parts
 
-**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T1.3
+**Trạng thái:** `DONE` · **Ước lượng:** 3h · **Phụ thuộc:** T1.3
+**Hoàn thành:** 2026-11-08 · commit `f3bb3b2`
 
 **Mục tiêu:** header sticky, wordmark, nav, search trigger, theme toggle, mobile menu; footer đầy đủ.
 
