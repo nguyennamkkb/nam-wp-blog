@@ -1,0 +1,68 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group">
+	<!-- wp:group {"className":"latent-section","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group latent-section">
+		<!-- wp:group {"className":"latent-section__head","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"baseline","flexWrap":"wrap"}} -->
+		<div class="wp-block-group latent-section__head">
+			<!-- wp:query-title {"type":"archive","level":1,"showPrefix":false,"className":"latent-section__title"} /-->
+
+			<!-- wp:group {"className":"latent-series-meta","layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"baseline"}} -->
+			<div class="wp-block-group latent-series-meta">
+				<!-- wp:term-count {"bracketType":"none","className":"latent-section__link"} /-->
+
+				<!-- wp:paragraph {"className":"latent-section__link"} -->
+				<p class="latent-section__link">phần</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:term-description /-->
+
+		<!-- wp:query {"queryId":5,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"asc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"className":"latent-query latent-grid--3","layout":{"type":"constrained"}} -->
+		<div class="wp-block-query latent-query latent-grid--3">
+			<!-- wp:post-template -->
+				<!-- wp:group {"className":"latent-card","layout":{"type":"default"}} -->
+				<div class="wp-block-group latent-card">
+					<!-- wp:post-featured-image {"isLink":true,"className":"latent-card__media"} /-->
+
+					<!-- wp:group {"className":"latent-card__body","layout":{"type":"constrained"}} -->
+					<div class="wp-block-group latent-card__body">
+						<!-- wp:group {"className":"latent-card__meta","layout":{"type":"flex","flexWrap":"wrap"}} -->
+						<div class="wp-block-group latent-card__meta">
+							<!-- wp:post-terms {"term":"category","className":"latent-card__category"} /-->
+							<!-- wp:post-date {"className":"latent-card__date"} /-->
+						</div>
+						<!-- /wp:group -->
+
+						<!-- wp:post-title {"isLink":true,"level":2,"className":"latent-card__title"} /-->
+
+						<!-- wp:post-excerpt {"excerptLength":22,"className":"latent-card__excerpt"} /-->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
+			<!-- /wp:post-template -->
+
+			<!-- wp:query-no-results -->
+				<!-- wp:paragraph -->
+				<p>Series này chưa có bài viết nào.</p>
+				<!-- /wp:paragraph -->
+			<!-- /wp:query-no-results -->
+
+			<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+				<!-- wp:query-pagination-previous /-->
+				<!-- wp:query-pagination-numbers /-->
+				<!-- wp:query-pagination-next /-->
+			<!-- /wp:query-pagination -->
+		</div>
+		<!-- /wp:query -->
+	</div>
+	<!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

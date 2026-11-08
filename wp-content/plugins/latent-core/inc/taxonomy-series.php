@@ -47,3 +47,25 @@ function latent_core_register_series_taxonomy(): void {
 	register_taxonomy( 'series', array( 'post' ), $args );
 }
 add_action( 'init', 'latent_core_register_series_taxonomy' );
+
+/**
+ * Order series archives from the oldest part to the newest.
+ *
+ * Only the main front-end query for the series taxonomy is affected, so
+ * admin screens and secondary queries keep their default ordering.
+ *
+ * @param WP_Query $query The query being prepared.
+ */
+function latent_core_order_series_archive( WP_Query $query ): void {
+	if ( is_admin() || ! $query->is_main_query() ) {
+		return;
+	}
+
+	if ( ! $query->is_tax( 'series' ) ) {
+		return;
+	}
+
+	$query->set( 'order', 'ASC' );
+	$query->set( 'orderby', 'date' );
+}
+add_action( 'pre_get_posts', 'latent_core_order_series_archive' );
