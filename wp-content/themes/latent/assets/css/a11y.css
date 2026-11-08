@@ -1,0 +1,51 @@
+/*
+ * Latent accessibility refinements.
+ *
+ * Small corrections that the component styles cannot express without
+ * changing their visual language. Everything resolves to theme.json tokens,
+ * so the fixes follow the light and dark palettes automatically.
+ */
+
+/* stylelint-disable selector-class-pattern -- BEM component classes are shared with the markup. */
+
+/*
+ * The active TOC row sits on an 8% accent tint (≈ #e2e3e9 in light mode),
+ * which pulled accent-on-tint down to 4.04:1. Mixing most of the accent with
+ * the contrast ink keeps the blue cue while raising the ratio to ~5.7:1 in
+ * light mode and comfortably above 4.5:1 in dark mode.
+ */
+.latent-toc__item a[aria-current="location"] {
+	color: color-mix(in srgb, var(--wp--preset--color--accent, #2f5bff) 75%, var(--wp--preset--color--contrast, #15171c));
+}
+
+/*
+ * Footer navigation links inherit the 14px footer type and were ~23px tall.
+ * A 24px minimum keeps every standalone pointer target at WCAG 2.2 size.
+ */
+.latent-footer__nav a {
+	display: inline-flex;
+	align-items: center;
+	min-height: 24px;
+}
+
+/*
+ * Wordmarks, category tags and the small "see all" links are standalone
+ * targets rather than inline links in a sentence, so they get the same 24px
+ * hit area without changing their type size.
+ */
+.wp-block-site-title a,
+.latent-card__category a,
+.latent-section__link a,
+.latent-series-strip a {
+	display: inline-flex;
+	align-items: center;
+	min-height: 24px;
+}
+
+/* Keep the focus indicator visible when the OS forces its own colours. */
+@media (forced-colors: active) {
+
+	:focus-visible {
+		outline: 2px solid canvastext;
+	}
+}
