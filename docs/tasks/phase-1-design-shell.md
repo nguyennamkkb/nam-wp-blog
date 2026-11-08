@@ -2,9 +2,10 @@
 
 > **Mục tiêu phase:** bộ token thiết kế, font, CSS nền, header/footer, 5 template chính, dark mode.
 > **Thời lượng:** ~25h · **Cổng ra:** tất cả template render với fixture; visual QA 3 breakpoints; dark mode không flash.
-> **Trạng thái phase:** `DOING`
+> **Trạng thái phase:** `DONE`
 > **Wave 1:** ✅ T1.1+T1.2 · T1.3 · T1.4
-> **Wave 2:** Worker A = T1.5 · Worker B = T1.6 · Worker C = T1.7
+> **Wave 2:** ✅ T1.5 · T1.6 · T1.7
+> **Wave 3:** ✅ T1.8
 
 ---
 
@@ -270,7 +271,8 @@ done
 
 ## T1.8 — Dark mode
 
-**Trạng thái:** `DOING` · **Ước lượng:** 2h · **Phụ thuộc:** T1.3, T1.4
+**Trạng thái:** `DONE` · **Ước lượng:** 2h · **Phụ thuộc:** T1.3, T1.4
+**Hoàn thành:** 2026-11-08 · commit `5408792`
 
 **Mục tiêu:** dark mode theo hệ thống, toggle thủ công, lưu lựa chọn, không flash sai màu.
 

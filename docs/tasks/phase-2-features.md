@@ -95,7 +95,7 @@ curl -s https://wp-blog.ddev.site/<slug>/ | grep -o 'latent-reading-time[^<]*'
 
 ## T2.3 — TOC + heading IDs + scroll spy
 
-**Trạng thái:** `TODO` · **Ước lượng:** 5h · **Phụ thuộc:** T2.2, T1.6
+**Trạng thái:** `DOING` · **Ước lượng:** 5h · **Phụ thuộc:** T2.2, T1.6
 
 **Mục tiêu:** mục lục tự động, link đúng, scroll spy, hỗ trợ tiếng Việt và heading trùng.
 
@@ -133,7 +133,7 @@ npx playwright test tests/e2e/toc.spec.ts
 
 ## T2.4 — Series nav/list blocks
 
-**Trạng thái:** `TODO` · **Ước lượng:** 3h · **Phụ thuộc:** T2.1, T2.2
+**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T2.1, T2.2
 
 **Mục tiêu:** người đọc thấy mình đang ở phần nào của series và khám phá series khác.
 
@@ -165,7 +165,7 @@ curl -s https://wp-blog.ddev.site/series/ | grep -o 'latent-series-list' | head
 
 ## T2.5 — Search command palette + fallback
 
-**Trạng thái:** `TODO` · **Ước lượng:** 5h · **Phụ thuộc:** T1.4, T1.7
+**Trạng thái:** `DOING` · **Ước lượng:** 5h · **Phụ thuộc:** T1.4, T1.7
 
 **Mục tiêu:** tìm kiếm nhanh bằng `Ctrl/Cmd + K`, không plugin, an toàn XSS, có fallback khi JS tắt.
 
@@ -203,7 +203,7 @@ curl -s -o /dev/null -w '%{http_code}\n' 'https://wp-blog.ddev.site/wp-json/wp/v
 
 ## T2.6 — Code block + copy + callouts
 
-**Trạng thái:** `TODO` · **Ước lượng:** 3h · **Phụ thuộc:** T1.3
+**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T1.3
 
 **Mục tiêu:** code block dễ đọc, copy được, không tràn mobile; callout note/warning/tip.
 

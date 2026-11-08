@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| **Đang làm** | T1.8 dark mode |
-| **Kế tiếp** | T2.3 TOC sau Wave 3 |
-| **Phase** | Phase 1 (T1.8) — Phase 2 T2.1/T2.2 ✅ |
+| **Đang làm** | T2.3+T2.4 (Worker A) · T2.5 (Worker B) · T2.6 (Worker C) — Wave 4 |
+| **Kế tiếp** | T2.7 author/related sau Wave 4 |
+| **Phase** | Phase 1 ✅ · Phase 2 — Wave 4 |
 | **Đã chốt** | Tên: Latent · Ngôn ngữ: tiếng Việt · Timeline: 10 ngày làm việc |
-| **Vừa xong** | T2.2 `8d94e1b` · T2.1 `e27e37f` · Wave 2 `8691d88`/`0689380`/`1cae590` |
+| **Vừa xong** | T1.8 `5408792` · auto-load `75a6836` · T2.2 `8d94e1b` · T2.1 `e27e37f` |
 
 ---
 
@@ -40,7 +40,7 @@
 | T1.5 | [Home/front-page template](phase-1-design-shell.md#t15--homefront-page-template) | T1.4 | 4h | `DONE` | hero + featured + latest — `8691d88` |
 | T1.6 | [Single template](phase-1-design-shell.md#t16--single-template) | T1.4 | 4h | `DONE` | single render, H1=1, no comments — `0689380` |
 | T1.7 | [Archive/page/search/404](phase-1-design-shell.md#t17--archivepagesearch404-templates) | T1.4 | 4h | `DONE` | 8 cards, search 200, 404 đúng — `1cae590` |
-| T1.8 | [Dark mode](phase-1-design-shell.md#t18--dark-mode) | T1.3, T1.4 | 2h | `DOING` | không flash, persist |
+| T1.8 | [Dark mode](phase-1-design-shell.md#t18--dark-mode) | T1.3, T1.4 | 2h | `DONE` | no flash, persist, 7 route Playwright — `5408792` |
 
 ### Phase 2 — Features (~27h)
 
@@ -48,10 +48,10 @@
 |---|---|---|---|---|---|
 | T2.1 | [Series taxonomy & archive](phase-2-features.md#t21--series-taxonomy--archive) | T0.4, T1.7 | 3h | `DONE` | 3 series 200, order ASC — `e27e37f` |
 | T2.2 | [Block scaffolding + reading time](phase-2-features.md#t22--block-scaffolding--reading-time) | T1.1 | 3h | `DONE` | block registered + render — `8d94e1b` |
-| T2.3 | [TOC + heading IDs + scroll spy](phase-2-features.md#t23--toc--heading-ids--scroll-spy) | T2.2, T1.6 | 5h | `TODO` | E2E-03 pass |
-| T2.4 | [Series nav/list blocks](phase-2-features.md#t24--series-navlist-blocks) | T2.1, T2.2 | 3h | `TODO` | E2E-04 pass |
-| T2.5 | [Search command palette + fallback](phase-2-features.md#t25--search-command-palette--fallback) | T1.4, T1.7 | 5h | `TODO` | E2E-05 pass |
-| T2.6 | [Code block + copy + callouts](phase-2-features.md#t26--code-block--copy--callouts) | T1.3 | 3h | `TODO` | E2E-07 pass |
+| T2.3 | [TOC + heading IDs + scroll spy](phase-2-features.md#t23--toc--heading-ids--scroll-spy) | T2.2, T1.6 | 5h | `DOING` | E2E-03 pass |
+| T2.4 | [Series nav/list blocks](phase-2-features.md#t24--series-navlist-blocks) | T2.1, T2.2 | 3h | `DOING` | E2E-04 pass |
+| T2.5 | [Search command palette + fallback](phase-2-features.md#t25--search-command-palette--fallback) | T1.4, T1.7 | 5h | `DOING` | E2E-05 pass |
+| T2.6 | [Code block + copy + callouts](phase-2-features.md#t26--code-block--copy--callouts) | T1.3 | 3h | `DOING` | E2E-07 pass |
 | T2.7 | [Author box, related, post meta](phase-2-features.md#t27--author-box-related-posts-post-meta) | T2.2, T2.3 | 3h | `TODO` | related đúng, exclude current |
 | T2.8 | [404/search/empty states polish](phase-2-features.md#t28--404searchempty-states-polish) | T2.5, T2.6 | 2h | `TODO` | E2E-08/10 pass |
 
