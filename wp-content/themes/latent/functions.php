@@ -18,6 +18,8 @@ $latent_includes = array(
 	'series',
 	'search',
 	'block-styles',
+	'related',
+	'seo',
 );
 
 foreach ( $latent_includes as $latent_include ) {

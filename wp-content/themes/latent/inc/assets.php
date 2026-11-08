@@ -50,11 +50,13 @@ add_action( 'wp_head', 'latent_preload_fonts', 1 );
  */
 function latent_enqueue_theme_assets(): void {
 	$styles = array(
-		'latent-toc'    => 'assets/css/toc.css',
-		'latent-series' => 'assets/css/series.css',
-		'latent-search' => 'assets/css/search.css',
-		'latent-code'   => 'assets/css/code.css',
-		'latent-dark'   => 'assets/css/dark.css',
+		'latent-toc'     => 'assets/css/toc.css',
+		'latent-series'  => 'assets/css/series.css',
+		'latent-search'  => 'assets/css/search.css',
+		'latent-code'    => 'assets/css/code.css',
+		'latent-related' => 'assets/css/related.css',
+		'latent-states'  => 'assets/css/states.css',
+		'latent-dark'    => 'assets/css/dark.css',
 	);
 
 	foreach ( $styles as $handle => $relative_path ) {
