@@ -8,9 +8,17 @@
 	"scripts": {
 		"lint": "npm run lint:js && npm run lint:css",
 		"lint:js": "eslint --no-error-on-unmatched-pattern \"wp-content/themes/latent/**/*.{js,jsx,mjs,cjs}\" \"wp-content/plugins/latent-core/**/*.{js,jsx,mjs,cjs}\" eslint.config.js",
-		"lint:css": "stylelint \"wp-content/themes/latent/**/*.css\" \"wp-content/plugins/latent-core/**/*.css\""
+		"lint:css": "stylelint \"wp-content/themes/latent/**/*.css\" \"wp-content/plugins/latent-core/**/*.css\"",
+		"test": "npm run test:e2e",
+		"test:e2e": "playwright test --project=chromium tests/e2e",
+		"test:a11y": "playwright test --project=chromium tests/a11y",
+		"test:visual": "playwright test --project=chromium tests/visual",
+		"test:visual:update": "playwright test --project=chromium tests/visual --update-snapshots",
+		"test:browsers": "playwright test --project=chromium --project=mobile-chromium tests/e2e"
 	},
 	"devDependencies": {
+		"@axe-core/playwright": "^4.14.0",
+		"@playwright/test": "^1.65.0",
 		"@wordpress/eslint-plugin": "^28.1.0",
 		"@wordpress/stylelint-config": "^27.1.0",
 		"eslint": "^9.0.0",
