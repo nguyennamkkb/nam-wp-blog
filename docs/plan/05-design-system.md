@@ -54,7 +54,7 @@ Thang chữ: 0.875 / 1 / 1.125 / 1.25 / 1.5 / 1.875 / 2.5 / 3.5 / 4.5 rem, dùng
 
 **Motion:** 120ms (micro), 200ms (UI), 320ms (page); easing `cubic-bezier(.2,.8,.2,1)`; tôn trọng `prefers-reduced-motion`.
 
-**Layout:** content 720px; wide 1200px; TOC 240px; breakpoints 640 / 768 / 1024 / 1280.
+**Layout:** content 800px; wide 1200px; TOC 240px; breakpoints 640 / 768 / 1024 / 1280.
 
 ## 5.3 Components
 

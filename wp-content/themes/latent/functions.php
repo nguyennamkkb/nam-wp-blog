@@ -87,8 +87,9 @@ add_action( 'wp_enqueue_scripts', 'latent_enqueue_styles' );
 function latent_copyright(): string {
 	return sprintf(
 		/* translators: %s: current year. */
-		esc_html__( '© %s Latent', 'latent' ),
-		esc_html( wp_date( 'Y' ) )
+		esc_html_x( '© %1$s %2$s', 'year, site name', 'latent' ),
+		esc_html( wp_date( 'Y' ) ),
+		esc_html( get_bloginfo( 'name', 'display' ) )
 	);
 }
 add_shortcode( 'latent_copyright', 'latent_copyright' );
