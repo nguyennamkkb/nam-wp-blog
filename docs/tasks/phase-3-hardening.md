@@ -82,7 +82,8 @@ curl -s https://wp-blog.ddev.site/feed/ | head -20
 
 ## T3.3 — Performance
 
-**Trạng thái:** `DOING` · **Ước lượng:** 5h · **Phụ thuộc:** T3.2, T2.8
+**Trạng thái:** `DONE` · **Ước lượng:** 5h · **Phụ thuộc:** T3.2, T2.8
+**Hoàn thành:** 2026-11-08 · commit `56f50c6`
 
 **Mục tiêu:** đạt budget CWV trên mobile, không có tài nguyên thừa.
 

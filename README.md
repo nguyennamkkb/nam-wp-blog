@@ -73,5 +73,5 @@ Chỉ **theme/plugin tự phát triển** được track trong Git. WordPress co
 | 3 — Hardening | Đang làm — T3.1 ✅, Wave 6 running |
 | 4 — Launch | Chưa bắt đầu |
 
-Đang chạy Wave 6: T3.3 performance · T3.4 accessibility. T3.2 ✅.
+Đang chạy Wave 6: T3.4 accessibility. T3.2/T3.3 ✅.
 Sau Wave 3: T2.3 TOC · T2.4 series nav · T2.5 search · T2.6 code/callouts.
