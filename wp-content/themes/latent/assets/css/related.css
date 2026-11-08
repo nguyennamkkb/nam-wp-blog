@@ -1,0 +1,90 @@
+/*
+ * Latent related posts and author box.
+ *
+ * Shared styles for the `latent/related-posts` block and the core author box
+ * rendered at the bottom of a single post.
+ */
+
+/* stylelint-disable selector-class-pattern, no-descending-specificity -- BEM components are grouped by section. */
+
+/* Related posts
+   ========================================================================== */
+
+.latent-related {
+	margin-block-start: var(--wp--preset--spacing--80, 4rem);
+	padding-block-start: var(--wp--preset--spacing--60, 2rem);
+	border-top: 1px solid var(--wp--preset--color--border, #e3dfd4);
+}
+
+.latent-related__title {
+	margin: 0;
+	color: var(--wp--preset--color--muted, #6e6a61);
+	font-family: var(--wp--preset--font-family--jetbrains-mono, monospace);
+	font-size: var(--wp--preset--font-size--small, 0.875rem);
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.latent-related__grid {
+	margin-block-start: var(--wp--preset--spacing--50, 1.5rem);
+}
+
+.latent-related__card {
+	min-width: 0;
+}
+
+.latent-related__card .latent-card__title {
+	font-size: var(--wp--preset--font-size--lead, 1.25rem);
+	overflow-wrap: anywhere;
+}
+
+.latent-related__card .latent-card__excerpt {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+
+/* Author box
+   ========================================================================== */
+
+.latent-author .wp-block-post-author__content {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	gap: var(--wp--preset--spacing--20, 0.5rem);
+	min-width: 0;
+}
+
+.latent-author .wp-block-post-author__name {
+	margin: 0;
+	font-size: var(--wp--preset--font-size--h3, 1.5rem);
+	line-height: 1.2;
+}
+
+.latent-author .wp-block-post-author__name a {
+	color: var(--wp--preset--color--contrast, #15171c);
+	text-decoration: none;
+}
+
+.latent-author .wp-block-post-author__name a:hover {
+	color: var(--wp--preset--color--accent, #2f5bff);
+}
+
+.latent-author .wp-block-post-author__bio {
+	margin: 0;
+	color: var(--wp--preset--color--muted, #6e6a61);
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+
+	.latent-author {
+		flex-direction: column;
+	}
+
+	.latent-related__card .latent-card__title {
+		font-size: var(--wp--preset--font-size--body, 1.0625rem);
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "latent/related-posts",
+	"title": "Related posts",
+	"category": "theme",
+	"icon": "list-view",
+	"description": "Shows three posts related to the current post by category or tag.",
+	"textdomain": "latent",
+	"usesContext": [ "postId" ],
+	"supports": {
+		"html": false,
+		"multiple": false
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}
