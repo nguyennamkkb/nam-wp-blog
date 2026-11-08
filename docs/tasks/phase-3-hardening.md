@@ -153,7 +153,8 @@ npx axe https://wp-blog.ddev.site/ --exit
 
 ## T3.5 — Security & backup
 
-**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T0.5
+**Trạng thái:** `DONE` · **Ước lượng:** 3h · **Phụ thuộc:** T0.5
+**Hoàn thành:** 2026-11-08 · commit `779dbe5`
 
 **Mục tiêu:** giảm bề mặt tấn công, có backup và quy trình restore đã kiểm chứng.
 
