@@ -15,9 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$latent_post_id     = (int) ( $block->context['postId'] ?? get_the_ID() );
-$latent_related     = latent_related_get_posts( $latent_post_id, 3 );
-$latent_heading_id  = wp_unique_id( 'latent-related-title-' );
+$latent_post_id    = (int) ( $block->context['postId'] ?? get_the_ID() );
+$latent_related    = latent_related_get_posts( $latent_post_id, 3 );
+$latent_heading_id = wp_unique_id( 'latent-related-title-' );
 
 if ( empty( $latent_related ) ) {
 	return;
