@@ -56,6 +56,7 @@ function latent_enqueue_theme_assets(): void {
 		'latent-code'    => 'assets/css/code.css',
 		'latent-related' => 'assets/css/related.css',
 		'latent-states'  => 'assets/css/states.css',
+		'latent-a11y'    => 'assets/css/a11y.css',
 		'latent-dark'    => 'assets/css/dark.css',
 	);
 

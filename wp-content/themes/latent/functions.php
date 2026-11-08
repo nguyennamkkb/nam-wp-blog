@@ -20,6 +20,9 @@ $latent_includes = array(
 	'block-styles',
 	'related',
 	'seo',
+	'llms',
+	'feed',
+	'performance',
 );
 
 foreach ( $latent_includes as $latent_include ) {
