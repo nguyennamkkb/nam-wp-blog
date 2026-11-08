@@ -44,7 +44,8 @@ npx lighthouse https://wp-blog.ddev.site/ --only-categories=seo --chrome-flags='
 
 ## T3.2 — OG/RSS/sitemap/robots/llms.txt
 
-**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T3.1
+**Trạng thái:** `DONE` · **Ước lượng:** 3h · **Phụ thuộc:** T3.1
+**Hoàn thành:** 2026-11-08 · commit `b4c72e8`
 
 **Mục tiêu:** chia sẻ mạng xã hội đẹp, feed/sitemap hợp lệ, robots đúng, có `llms.txt` cho AI search.
 

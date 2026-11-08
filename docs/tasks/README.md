@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| **Đang làm** | T3.2 OG/RSS/sitemap · T3.3 performance · T3.4 accessibility — Wave 6 |
+| **Đang làm** | T3.3 performance · T3.4 accessibility — Wave 6 |
 | **Kế tiếp** | T3.5 security sau Wave 6 |
 | **Phase** | Phase 2 ✅ · Phase 3 — Wave 6 |
 | **Đã chốt** | Tên: Latent · Ngôn ngữ: tiếng Việt · Timeline: 10 ngày làm việc |
-| **Vừa xong** | T3.1 `0d7a86a` · PHPCS fix `656bb19` · T2.8 `3ba698d` |
+| **Vừa xong** | T3.2 `b4c72e8` · T3.1 `0d7a86a` · PHPCS fix `656bb19` |
 
 ---
 
@@ -60,7 +60,7 @@
 | ID | Task | Phụ thuộc | Ước lượng | Trạng thái | Kiểm chứng |
 |---|---|---|---|---|---|
 | T3.1 | [SEO & schema](phase-3-hardening.md#t31--seo--schema) | T2.8 | 4h | `DONE` | meta+OG+JSON-LD, SEO 100 — `0d7a86a` |
-| T3.2 | [OG/RSS/sitemap/robots/llms.txt](phase-3-hardening.md#t32--ogrsssitemaprobotsllmstxt) | T3.1 | 3h | `DOING` | E2E-11/12 pass |
+| T3.2 | [OG/RSS/sitemap/robots/llms.txt](phase-3-hardening.md#t32--ogrsssitemaprobotsllmstxt) | T3.1 | 3h | `DONE` | 5 endpoints 200, RSS media, llms.txt — `b4c72e8` |
 | T3.3 | [Performance](phase-3-hardening.md#t33--performance) | T3.2, T2.8 | 5h | `DOING` | PERF budgets |
 | T3.4 | [Accessibility](phase-3-hardening.md#t34--accessibility) | T2.8 | 4h | `DOING` | A11Y-01/02 pass |
 | T3.5 | [Security & backup](phase-3-hardening.md#t35--security--backup) | T0.5 | 3h | `TODO` | SEC-01..05 pass |
