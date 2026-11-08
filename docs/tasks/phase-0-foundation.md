@@ -2,7 +2,7 @@
 
 > **Mục tiêu phase:** repo sạch, site baseline đúng, theme/plugin skeleton, CI lint.
 > **Thời lượng:** ~9h · **Cổng ra:** `ddev start` OK, theme active, `composer lint` + `npm run lint` xanh.
-> **Trạng thái phase:** `DOING`
+> **Trạng thái phase:** `DONE`
 
 ---
 
@@ -303,7 +303,8 @@ ddev wp eval 'var_dump(comments_open(1));'
 
 ## T0.5 — CI lint baseline
 
-**Trạng thái:** `READY` · **Ước lượng:** 2.5h · **Phụ thuộc:** T0.1, T0.3, T0.4
+**Trạng thái:** `DONE` · **Ước lượng:** 2.5h · **Phụ thuộc:** T0.1, T0.3, T0.4
+**Hoàn thành:** 2026-11-08 · commit `20e84a6`
 
 **Mục tiêu:** mọi commit được kiểm tra tự động: PHP standards, static analysis, JS/CSS lint, theme.json schema.
 

@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| **Đang làm** | — |
-| **Kế tiếp** | [T0.5 — CI lint baseline](phase-0-foundation.md#t05--ci-lint-baseline) |
-| **Phase** | 0 — Foundation (4/5) |
+| **Đang làm** | T1.1 / T1.3 / T1.4 (Wave 1) |
+| **Kế tiếp** | [T1.5 — Home/front-page](phase-1-design-shell.md#t15--homefront-page-template) sau Wave 1 |
+| **Phase** | 0 ✅ · Phase 1 — Design system & shell (đang làm) |
 | **Đã chốt** | Tên: Latent · Ngôn ngữ: tiếng Việt · Timeline: 10 ngày làm việc |
-| **Vừa xong** | T0.1 `4468735` · T0.2 (DB) · T0.3 `c0d301b` · T0.4 `3b93d4d` |
+| **Vừa xong** | Phase 0: T0.1 `4468735` · T0.2 (DB) · T0.3 `c0d301b` · T0.4 `3b93d4d` · T0.5 `20e84a6` |
 
 ---
 
@@ -27,16 +27,16 @@
 | T0.2 | [Site baseline config](phase-0-foundation.md#t02--site-baseline-config) | T0.1 | 2h | `DONE` | options/pages/categories đúng (DB local) |
 | T0.3 | [Theme skeleton](phase-0-foundation.md#t03--theme-skeleton) | T0.2 | 2h | `DONE` | theme active, 200 OK — `c0d301b` |
 | T0.4 | [Plugin latent-core](phase-0-foundation.md#t04--plugin-latent-core-skeleton) | T0.2 | 1.5h | `DONE` | series taxonomy + comments off — `3b93d4d` |
-| T0.5 | [CI lint baseline](phase-0-foundation.md#t05--ci-lint-baseline) | T0.1, T0.3, T0.4 | 2.5h | `READY` | `composer lint`, `npm run lint` |
+| T0.5 | [CI lint baseline](phase-0-foundation.md#t05--ci-lint-baseline) | T0.1, T0.3, T0.4 | 2.5h | `DONE` | PHPCS/PHPStan/ESLint/Stylelint pass — `20e84a6` |
 
 ### Phase 1 — Design system & shell (~25h)
 
 | ID | Task | Phụ thuộc | Ước lượng | Trạng thái | Kiểm chứng |
 |---|---|---|---|---|---|
-| T1.1 | [theme.json tokens](phase-1-design-shell.md#t11--themejson-tokens) | T0.3 | 3h | `TODO` | palette/typography/layout áp dụng |
+| T1.1 | [theme.json tokens](phase-1-design-shell.md#t11--themejson-tokens) | T0.3 | 3h | `DOING` | palette/typography/layout áp dụng |
 | T1.2 | [Self-host fonts](phase-1-design-shell.md#t12--self-host-fonts) | T1.1 | 2h | `TODO` | không request Google Fonts |
-| T1.3 | [Global CSS & base elements](phase-1-design-shell.md#t13--global-css--base-elements) | T1.1, T1.2 | 3h | `TODO` | focus/skip link/không tràn ngang |
-| T1.4 | [Header/footer parts](phase-1-design-shell.md#t14--headerfooter-parts) | T1.3 | 3h | `TODO` | nav keyboard + mobile menu |
+| T1.3 | [Global CSS & base elements](phase-1-design-shell.md#t13--global-css--base-elements) | T1.1, T1.2 | 3h | `DOING` | focus/skip link/không tràn ngang |
+| T1.4 | [Header/footer parts](phase-1-design-shell.md#t14--headerfooter-parts) | T1.3 | 3h | `DOING` | nav keyboard + mobile menu |
 | T1.5 | [Home/front-page template](phase-1-design-shell.md#t15--homefront-page-template) | T1.4 | 4h | `TODO` | hero + featured + latest |
 | T1.6 | [Single template](phase-1-design-shell.md#t16--single-template) | T1.4 | 4h | `TODO` | bài viết render đúng |
 | T1.7 | [Archive/page/search/404](phase-1-design-shell.md#t17--archivepagesearch404-templates) | T1.4 | 4h | `TODO` | status code + query loop |

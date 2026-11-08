@@ -113,12 +113,13 @@ docs/
 | Hạng mục | Trạng thái |
 |---|---|
 | Kế hoạch & chia nhỏ task | ✅ Xong |
-| Phase 0 — Foundation | 🟡 Đang làm — T0.1–T0.4 ✅, T0.5 next |
-| Phase 1 — Design system & shell | ⬜ Chưa bắt đầu |
+| Phase 0 — Foundation | ✅ Xong |
+| Phase 1 — Design system & shell | 🟡 Đang làm — Wave 1 (T1.1/T1.3/T1.4) |
 | Phase 2 — Features | ⬜ Chưa bắt đầu |
 | Phase 3 — Hardening | ⬜ Chưa bắt đầu |
 | Phase 4 — Launch | ⬜ Chưa bắt đầu |
 
 **Đã chốt:** tên **Latent** · ngôn ngữ **tiếng Việt** · timeline **10 ngày làm việc**.
 
-**Task kế tiếp:** [T0.5 — CI lint baseline](tasks/phase-0-foundation.md#t05--ci-lint-baseline)
+**Đang chạy:** T1.1 + T1.2 (Worker A) · T1.3 (Worker B) · T1.4 (Worker C)
+**Sau Wave 1:** [T1.5 — Home/front-page](tasks/phase-1-design-shell.md#t15--homefront-page-template)

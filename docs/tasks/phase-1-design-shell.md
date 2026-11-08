@@ -2,13 +2,14 @@
 
 > **Mục tiêu phase:** bộ token thiết kế, font, CSS nền, header/footer, 5 template chính, dark mode.
 > **Thời lượng:** ~25h · **Cổng ra:** tất cả template render với fixture; visual QA 3 breakpoints; dark mode không flash.
-> **Trạng thái phase:** `TODO`
+> **Trạng thái phase:** `DOING`
+> **Wave 1:** Worker A = T1.1 + T1.2 · Worker B = T1.3 · Worker C = T1.4
 
 ---
 
 ## T1.1 — theme.json tokens
 
-**Trạng thái:** `TODO` · **Ước lượng:** 3h · **Phụ thuộc:** T0.3
+**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T0.3
 
 **Mục tiêu:** toàn bộ màu, typography, spacing, layout, radius được khai báo một lần trong `theme.json`; không hardcode trong template.
 
@@ -83,7 +84,7 @@ find wp-content/themes/latent/assets/fonts -name '*.woff2' -printf '%s %p\n' | s
 
 ## T1.3 — Global CSS & base elements
 
-**Trạng thái:** `TODO` · **Ước lượng:** 3h · **Phụ thuộc:** T1.1, T1.2
+**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T1.1, T1.2
 
 **Mục tiêu:** nền CSS sạch cho toàn site: reset nhẹ, typography, link, focus, skip link, form, table, code, print.
 
@@ -123,7 +124,7 @@ grep -nE '#[0-9a-fA-F]{3,8}' wp-content/themes/latent/assets/css/theme.css | hea
 
 ## T1.4 — Header/footer parts
 
-**Trạng thái:** `TODO` · **Ước lượng:** 3h · **Phụ thuộc:** T1.3
+**Trạng thái:** `DOING` · **Ước lượng:** 3h · **Phụ thuộc:** T1.3
 
 **Mục tiêu:** header sticky, wordmark, nav, search trigger, theme toggle, mobile menu; footer đầy đủ.
 
